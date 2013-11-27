@@ -1,0 +1,33 @@
+extends ../index
+
+block section
+	.row
+		h1.col-xs-6.col-sm-6.col-md-6.col-lg-6 Campaigns
+		p#infoNumberGames.col-xs-6.col-sm-6.col-md-6.col-lg-6 
+	
+	#verticalSeparator
+	
+	.row
+		.col-xs-6.col-sm-6.col-md-6.col-lg-6
+			.btn-group
+				button.btn.btn-default All
+				button.btn.btn-default D&D4
+				button.btn.btn-default Pathfinder
+				button.btn.btn-default Vampire
+		.col-xs-6.col-sm-6.col-md-6.col-lg-6
+			input.form-control(type="email" placeholder="Filter...")
+	
+	.table-responsive
+		table.table.table-striped.table-hover
+			thead
+				tr
+					th Name
+					th Master
+					th Game System
+					th Players
+					th State
+			tbody#table_data
+			
+	
+	
+	script(src="/javascripts/campaigns.js")

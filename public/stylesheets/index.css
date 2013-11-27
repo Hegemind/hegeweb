@@ -1,0 +1,12 @@
+.thumbnail {
+	border-color: 4px solid transparent;
+	text-align: center;
+}
+
+.thumbnail:hover {
+    border: 4px solid #d0d0d0;
+}
+
+#verticalSeparator {
+	height: 1em;
+}

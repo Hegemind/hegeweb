@@ -1,0 +1,44 @@
+extends ../index
+
+block section
+	.row
+		a.btn.btn-primary.pull-right(href="#newCharsheetModal", data-toggle="modal", onclick="populatePlayerList()") Create new character
+		
+		h1.col-xs-6.col-sm-6.col-md-6.col-lg-6 Charsheets
+		
+	#verticalSeparator
+
+	#accordion.panel-group
+		.panel.panel-default
+			.panel-heading
+				h4.panel-title
+					a.accordion-toggle(data-toggle="collapse", data-parent="#accordion", href="#collapseOne") My characters
+			#collapseOne.panel-collapse.collapse.in
+				.panel-body
+					.row
+						.col-xs-6.col-sm-6.col-md-6.col-lg-6
+							.btn-group
+								button.btn.btn-default All
+								button.btn.btn-default D&D4
+								button.btn.btn-default Pathfinder
+								button.btn.btn-default Vampire
+						.col-xs-6.col-sm-6.col-md-6.col-lg-6
+							input.form-control(type="email" placeholder="Filter...")
+					.table-responsive
+						table.table.table-hover
+							thead
+								tr
+									th Name
+									th Type
+									th Description
+									th Game
+									th Since
+									th Current campaign
+									th Actions
+							tbody#table_data
+				p#infoNumberCharsheets.col-xs-6.col-sm-6.col-md-6.col-lg-6 
+
+	
+	script(src="/javascripts/charsheets.js")
+	
+	include ../forms/newCharsheetModal
