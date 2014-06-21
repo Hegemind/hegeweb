@@ -42,8 +42,8 @@ function abilitiesUpdate(){
 		abilitiesMod[CHA]	= Math.floor((abilitiesValue[CHA]/2)-5);
 		$('[name$="CHA-mod"]').val(abilitiesMod[CHA]);
 	});
-	console.log('Values: '+abilitiesValue);
-	console.log('Modifiers: '+abilitiesMod);
+	console.log(abilitiesValue);
+	console.log(abilitiesMod);
 }
 
 function skillUpdate(){
