@@ -11,39 +11,54 @@ var WISmod = "";
 var CHA = "";
 var CHAmod = "";
 
-$('[name="STR-score"]').change( function () { 
-	STR 	= $(this).val();
-	STRmod	= Math.floor((STR/2)-5);
-	$('[name$="STR-mod"]').val(STRmod);
+$('input').change(function(){
+	abilitiesUpdate();
+	skillUpdate();
 });
 
-$('[name="DEX-score"]').blur( function () { 
-	DEX = $(this).val();
-	DEXmod	= Math.floor((DEX/2)-5);
-	$('[name$="DEX-mod"]').val(DEXmod);
-});
+function abilitiesUpdate(){
+	$('[name="STR-score"]').change( function () { 
+		STR 	= $(this).val();
+		STRmod	= Math.floor((STR/2)-5);
+		$('[name$="STR-mod"]').val(STRmod);
+	});
 
-$('[name="CON-score"]').blur( function () { 
-	CON = $(this).val();
-	CONmod	= Math.floor((CON/2)-5);
-	$('[name$="CON-mod"]').val(CONmod);
-});
+	$('[name="DEX-score"]').blur( function () { 
+		DEX = $(this).val();
+		DEXmod	= Math.floor((DEX/2)-5);
+		$('[name$="DEX-mod"]').val(DEXmod);
+	});
 
-$('[name="INT-score"]').blur( function () { 
-	INT = $(this).val();
-	INTmod	= Math.floor((INT/2)-5);
-	$('[name$="INT-mod"]').val(INTmod);
-});
+	$('[name="CON-score"]').blur( function () { 
+		CON = $(this).val();
+		CONmod	= Math.floor((CON/2)-5);
+		$('[name$="CON-mod"]').val(CONmod);
+	});
 
-$('[name="WIS-score"]').blur( function () { 
-	WIS = $(this).val();
-	WISmod	= Math.floor((WIS/2)-5);
-	$('[name$="WIS-mod"]').val(WISmod);
-});
+	$('[name="INT-score"]').blur( function () { 
+		INT = $(this).val();
+		INTmod	= Math.floor((INT/2)-5);
+		$('[name$="INT-mod"]').val(INTmod);
+	});
 
-$('[name="CHA-score"]').blur( function () { 
-	CHA = $(this).val();
-	CHAmod	= Math.floor((CHA/2)-5);
-	$('[name$="CHA-mod"]').val(CHAmod);
-});
+	$('[name="WIS-score"]').blur( function () { 
+		WIS = $(this).val();
+		WISmod	= Math.floor((WIS/2)-5);
+		$('[name$="WIS-mod"]').val(WISmod);
+	});
+
+	$('[name="CHA-score"]').blur( function () { 
+		CHA = $(this).val();
+		CHAmod	= Math.floor((CHA/2)-5);
+		$('[name$="CHA-mod"]').val(CHAmod);
+	});
+}
+
+function skillUpdate(){
+	$('.skill.basic').each( function(){
+		var key = $(this).find('.key').val();
+		var keyV = 
+		$(this).find('[name$=-abil]').val(keyV);
+	});
+}
 
