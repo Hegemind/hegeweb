@@ -1,0 +1,103 @@
+extends layout
+
+block htmlhead
+	link(rel='stylesheet', href='/css/start.css')
+	
+block content
+
+	<!-- Carousel ================================================== -->
+	#myCarousel.carousel.slide
+		<!-- Indicators -->
+		ol.carousel-indicators
+			li.active(data-target="#myCarousel" data-slide-to="0")
+			li(data-target="#myCarousel" data-slide-to="1")
+			li(data-target="#myCarousel" data-slide-to="2")
+		
+		.carousel-inner
+			.item.active
+				img(src="http://lorempixel.com/g/1500/600/city/1")
+				.container
+					.carousel-caption
+						h1 Bootstrap 3 Carousel Layout
+						p This is an example layout with carousel that uses the Bootstrap 3 styles.
+							a(title="Bootstrap 3", href="http://getbootstrap.com" class="") Bootstrap 3 RC 1 is now available!
+						p 
+							a.btn.btn-large.btn-primary(href="#") Sign up today
+			.item
+				img(src="http://lorempixel.com/1500/600/abstract")
+				.container
+					.carousel-caption
+						h1 Changes to the Grid
+						p Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.
+						p
+							a.btn.btn-large.btn-primary(href="#") Learn more
+			.item
+				img(src="http://placehold.it/1500X500")
+				.container
+					.carousel-caption
+					h1 Percentage-based sizing
+					p With "mobile-first" there is now only one percentage-based grid.
+					p
+						a.btn.btn-large.btn-primary(href="#") Browse gallery
+						
+			<!-- Controls -->
+			a.left.carousel-control(href="#myCarousel", data-slide="prev")
+				span.icon-prev
+			
+			a.right.carousel-control(href="#myCarousel", data-slide="next")
+				span.icon-next
+
+
+	#frame
+		#welcomeBox.panel.panel-default
+			.panel-heading 
+				h1 Welcome to AlterFutura
+			.panel-body
+				p Hi there!
+				p Please <a href="/login">log in</a> to contiue
+				
+	<!-- Three columns of text below the carousel -->
+	.row
+		.col-md-4.text-center
+			img.img-circle(src="http://placehold.it/140x140")
+			h2 Mobile-first
+			p Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.
+			p <a class="btn btn-default" href="#">View details »</a>
+		.col-md-4.text-center
+			img.img-circle(src="http://placehold.it/140x140")
+			h2 One Fluid Grid
+			p There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.
+			p <a class="btn btn-default" href="#">View details »</a>
+		.col-md-4.text-center
+			img.img-circle(src="http://placehold.it/140x140")
+			h2 LESS is more
+			p Improved support for mixins make the new Bootstrap 3 easier to customize.
+			p <a class="btn btn-default" href="#">View details »</a>
+	
+	hr.featurette-divider
+	
+	.featurette
+		img.featurette-image.img-circle.pull-right(src="http://placehold.it/512")
+		h2.featurette-heading Responsive Design.
+			span.text-muted" It'll blow your mind.
+		p.lead In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.
+
+	hr.featurette-divider
+	
+	.featurette
+		img.featurette-image.img-circle.pull-left(src="http://placehold.it/512")
+		h2.featurette-heading Responsive Design.
+			span.text-muted" Lightweight.
+		p.lead The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.
+		
+	hr.featurette-divider
+	
+	.featurette
+		img.featurette-image.img-circle.pull-right(src="http://placehold.it/512")
+		h2.featurette-heading Responsive Design.
+			span.text-muted" Flatness.
+		p.lead A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.
+		
+	hr.featurette-divider
+	
+	

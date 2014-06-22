@@ -1,0 +1,17 @@
+extends layout
+
+block htmlhead
+	//link(rel='stylesheet', href='/css/signin.css')
+	script(src="/js/logout.js")
+	
+block content
+	.container
+		.jumbotron
+			.container
+				h1 Log out
+				p You logged out correctly
+				a(href="/start") Go back to the start
+		
+		#errorAlert.alert.alert-danger.alert-dismissable
+				button.close(type="button", data-dismiss="alert" aria-hidden="true") &times;
+				p placeholder
