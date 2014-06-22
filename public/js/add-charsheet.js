@@ -1,9 +1,26 @@
-var abilitiesValue = {STR:0,DEX:0,CON:0,INT:0,WIS:0,CHA:0}
-var abilitiesMod = {STR:0,DEX:0,CON:0,INT:0,WIS:0,CHA:0}
+var abilitiesValue = {STR:0,DEX:0,CON:0,INT:0,WIS:0,CHA:0};
+var abilitiesMod = {STR:0,DEX:0,CON:0,INT:0,WIS:0,CHA:0};
+var abilitiesRacial = {STR:0,DEX:0,CON:0,INT:0,WIS:0,CHA:0};
 
+//Actualizar los rasgos raciales
+$('[name="charRace"]').change( function(){
+	var race = $(this).val().toLowerCase();
+	var raceIndex = "";
+	for (var i = 0; i < catalogRaces.length; i++) {
+    	if (catalogRaces[i].raceName == race) {
+    		raceIndex = i;
+    	}
+	}
+
+	$('[name="charSize"]').val(catalogRaces[raceIndex].raceSize);
+	$('[name="Speed"]').val(catalogRaces[raceIndex].baseSpeed);
+
+});
+
+//Actualizar los modificadores de atributos
 $('[name="STR-score"]').change( function () { 
   abilitiesValue[STR] = $(this).val();
-  abilitiesMod[STR]	= Math.floor((abilitiesValue[STR]/2)-5);
+  abilitiesMod[STR]	= Math.floor((abilitiesValue[STR]/2)-5) + abilitiesRacial[STR];
   $('[name$="STR-mod"]').val(abilitiesMod[STR]);
  
   $('.skill.basic').each( function(){
@@ -11,7 +28,7 @@ $('[name="STR-score"]').change( function () {
 			{$(this).find('[name$="-abil"]').val(abilitiesMod[STR])}
 	});
   //grapple
-});
+}); 
 
 $('[name="DEX-score"]').change( function () { 
   abilitiesValue[DEX] = $(this).val();
@@ -70,7 +87,7 @@ $('[name="CHA-score"]').change( function () {
 	});
 });
 
-// console.log(abilitiesValue);
-// console.log(abilitiesMod);
+//AC update
+$('[name="CHA-score"]')
 
 

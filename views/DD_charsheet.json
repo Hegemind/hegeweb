@@ -1,0 +1,108 @@
+{
+	"alignment" : {	"legalGood" : "Legal Good",
+					"legalNeutral" : "Legal Neutral",
+					"legalEvil" : "Legal Evil",
+					"neutralGood" : "Neutral Good",
+					"neutralNeutral" : "True Neutral",
+					"neutralEvil" : "Neutral Evil",
+					"chaoticGood" : "Chaotic Good",
+					"chaoticNeutral" : "Chaotic Neutral",
+					"chaoticEvil" : "Chaotic Evil"
+				},
+	"races" : 	[	
+					{
+						"raceName"				:	"Human",
+						"abilitiesAdjustment"	:	{},
+						"skillsAdjustment"		:	{}, 
+						"preferredClass"		:	"",
+						"minWeight"				:	"60",
+						"maxWeight"				:	"115",
+						"minHeight"				:	"150",
+						"maxHeight"				:	"190",
+						"baseSpeed"				:	"30",
+						"raceSize"				:	"Medium"
+					},
+					{
+						"raceName"				:	"Elf",
+						"abilitiesAdjustment"	:	{"DEX":"2","CON":"-2"}, 
+						"skillsAdjustment"		:	{"spot":"2","search":"2","listen":"2"}, 
+						"preferredClass"		:	"Mage",
+						"minWeight"				:	"40",
+						"maxWeight"				:	"65",
+						"minHeight"				:	"130",
+						"maxHeight"				:	"170",
+						"baseSpeed"				:	"30",
+						"raceSize"				:	"Medium"
+					},
+					{
+						"raceName"				:	"Dwarf",
+						"abilitiesAdjustment"	:	{"CON":"2","CHA":"-2"}, 
+						"skillsAdjustment"		:	{"search":"2","craft":"2"}, 
+						"preferredClass"		:	"Warrior",
+						"minWeight"				:	"60",
+						"maxWeight"				:	"115",
+						"minHeight"				:	"120",
+						"maxHeight"				:	"140",
+						"baseSpeed"				:	"20",
+						"raceSize"				:	"Medium"
+					},
+					{
+						"raceName"				:	"Gnome",
+						"abilitiesAdjustment"	:	{"CON":"2","STR":"-2"}, 
+						"skillsAdjustment"		:	{"listen":"2","craft":"2"}, 
+						"preferredClass"		:	"Bard",
+						"minWeight"				:	"18",
+						"maxWeight"				:	"20",
+						"minHeight"				:	"90",
+						"maxHeight"				:	"105",
+						"baseSpeed"				:	"20",
+						"raceSize"				:	"Small"
+					},
+					{
+						"raceName"				:	"Halfling",
+						"abilitiesAdjustment"	:	{"DEX":"2","STR":"-2"}, 
+						"skillsAdjustment"		:	{"silentmove":"2","jump":"2","climb":"2","listen":"2"}, 
+						"preferredClass"		:	"Rogue",
+						"minWeight"				:	"12",
+						"maxWeight"				:	"15",
+						"minHeight"				:	"75",
+						"maxHeight"				:	"90",
+						"baseSpeed"				:	"20",
+						"raceSize"				:	"Small"
+					},
+					{
+						"raceName"				:	"Half-elf",
+						"abilitiesAdjustment"	:	{}, 
+						"skillsAdjustment"		:	{"spot":"2","search":"2","listen":"2","diplomacy":"2","gather":"2"}, 
+						"preferredClass"		:	"",
+						"minWeight"				:	"40",
+						"maxWeight"				:	"80",
+						"minHeight"				:	"150",
+						"maxHeight"				:	"190",
+						"baseSpeed"				:	"30",
+						"raceSize"				:	"Medium"
+					},
+					{
+						"raceName"				:	"Half-orc",
+						"abilitiesAdjustment"	:	{"STR":"2","INT":"-2","CHA":"-2"}, 
+						"skillsAdjustment"		:	{}, 
+						"preferredClass"		:	"",
+						"minWeight"				:	"90",
+						"maxWeight"				:	"115",
+						"minHeight"				:	"180",
+						"maxHeight"				:	"210",
+						"baseSpeed"				:	"30",
+						"raceSize"				:	"Medium"
+					}
+				],
+	"size" : 	{	"Fine"		:	"8",
+					"Diminutive":	"4",
+					"Tiny"		:	"2",
+					"Small"		:	"1",
+					"Medium"	:	"0",
+					"Large"		:	"-1",
+					"Huge"		:	"-2",
+					"Gargantuan":	"-4",
+					"Colossal"	:	"-8"
+				}
+}
