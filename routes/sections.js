@@ -1,49 +1,61 @@
 exports.home = function(req, res){
-	var username = req.session.user_id;
+// 	var username = req.session.user_id;
+  var username = "dummy user"
 	res.render('sections/home', {
 		username: username,
 		section : [
 			{
 				name: "Profile",
 				link: "/profile",
-				image: "images/final-dice1.png"
+				image: "img/final-dice1.png"
 			},
 			{
 				name: "Charsheets",
 				link: "/charsheets",
-				image: "images/diablo3-character-profile.jpg"
+				image: "img/diablo3-character-profile.jpg"
 				
 			},
-			{
-				name: "Campaigns",
-				link: "/campaigns",
-				image: "images/esteria.jpg"
-			}
+      {
+        name: "Campaigns",
+        link: "/campaigns",
+        image: "img/esteria.jpg"
+      },
+      {
+        name: "D&D Charsheet",
+        link: "/dndcharsheet",
+        image: "img/logo-d&d.jpg"
+      }
 		]
 	});
 };
 
 exports.profile = function(req, res){
-	var username = req.session.user_id;
+// 	var username = req.session.user_id;
+  var username = "dummy user"
 	res.render('sections/profile', {
 		username: username,
 		section : [
 			{
 				name: "Profile",
 				link: "/profile",
-				image: "images/final-dice1.png"
+				image: "img/final-dice1.png"
 			},
 			{
 				name: "Charsheets",
 				link: "/charsheets",
-				image: "images/diablo3-character-profile.jpg"
+				image: "img/diablo3-character-profile.jpg"
 				
 			},
 			{
 				name: "Campaigns",
 				link: "/campaigns",
-				image: "images/esteria.jpg"
-			}
+				image: "img/esteria.jpg"
+			},
+      {
+        name: "D&D Charsheet",
+        link: "/dndcharsheet",
+        image: "img/logo-d&d.jpg"
+      }
 		]
 	});
 };
@@ -54,19 +66,24 @@ exports.charsheets = function(req, res){
 			{
 				name: "Profile",
 				link: "/profile",
-				image: "images/final-dice1.png"
+				image: "img/final-dice1.png"
 			},
 			{
 				name: "Charsheets",
 				link: "/charsheets",
-				image: "images/diablo3-character-profile.jpg"
+				image: "img/diablo3-character-profile.jpg"
 				
 			},
 			{
 				name: "Campaigns",
 				link: "/campaigns",
-				image: "images/esteria.jpg"
-			}
+				image: "img/esteria.jpg"
+			},
+      {
+        name: "D&D Charsheet",
+        link: "/dndcharsheet",
+        image: "img/logo-d&d.jpg"
+      }
 		]
 	});
 };
@@ -77,19 +94,24 @@ exports.campaigns = function(req, res){
 			{
 				name: "Profile",
 				link: "/profile",
-				image: "images/final-dice1.png"
+				image: "img/final-dice1.png"
 			},
 			{
 				name: "Charsheets",
 				link: "/charsheets",
-				image: "images/diablo3-character-profile.jpg"
+				image: "img/diablo3-character-profile.jpg"
 				
 			},
 			{
 				name: "Campaigns",
 				link: "/campaigns",
-				image: "images/esteria.jpg"
-			}
+				image: "img/esteria.jpg"
+			},
+      {
+        name: "D&D Charsheet",
+        link: "/dndcharsheet",
+        image: "img/logo-d&d.jpg"
+      }
 		]
 	});
 };
