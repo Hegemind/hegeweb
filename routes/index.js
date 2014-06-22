@@ -12,8 +12,8 @@ exports.error = function(req, res){
 	res.render('error');
 };
 
-exports.indexHTML = function(req, res){
-  res.render('index.html');
+exports.index = function(req, res){
+  res.render('index.html', { title: 'Express' });
 };
 
 exports.login = function(req, res){
