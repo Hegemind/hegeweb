@@ -2,13 +2,15 @@
 
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
 }
 
 .clear {clear: both;}
-section {margin: 15px;}
+section {margin: 10px;}
 
 #charsheet {
-	width: 1100px;
+	width: 1024px;
 	margin: 25px auto;
 	//background: LightCyan;
 }
@@ -43,8 +45,17 @@ h3 {
 	&.total {font-size: 0.7em; font-weight: 500;}
 }
 
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+	display: none;
+	webkit-appearance: none; 
+ 	margin: 0; 
+}
+
 input,
-textarea {
+textarea,
+span.input {
+	font-family: 'Patrick Hand', cursive;
 	border: 1px solid #000;
 	display: inline-block;
 	margin: 0;
@@ -52,14 +63,14 @@ textarea {
 	font-weight: 300;
 	text-align: center;
 	width: 2rem;
-	font-family: 'Patrick Hand', cursive;
-	padding: 4px;
+	padding: 0 4px 4px;
 	margin: 3px;
-	height: 1rem;
+	height: 1.2em;
 	line-height: 1em;
 	vertical-align: middle;
 	outline: none;
-	&.wide {width: 6.5rem;}
+	webkit-appearance: none;
+	&.wide {width: 4.2rem;}
 	&.box {
 		background: #fff;
 		&.shade {
@@ -77,7 +88,9 @@ textarea {
 		border-color: #ddd;
 	}
 }
-
+span.input.box {
+	padding: 4px 4px 0;
+}
 /*******************************
 	Logo
 ********************************/
@@ -112,10 +125,16 @@ textarea {
 	div {
 		display: inline-block;
 		margin-right: 1rem;
-		&.longest {width: 19rem;}
-		&.long {width: 13.8rem;}
-		&.wide {width: 5.5rem;}
-		&.short {width: 3.8rem;}
+		&.longest {width: 18rem;}
+		&.long {width: 13rem;}
+		&.wide {width: 5.2rem;}
+		&.short {width: 3.55rem;}
+	}
+	select {
+		display: inline-block;
+		width: 100%;
+		vertical-align: top;
+		text-transform: capitalize;
 	}
 }
 
@@ -136,20 +155,23 @@ textarea {
 ********************************/
 
 #hitPoints {
+	margin-bottom: 15px;
 	#HP {margin-bottom: 4px;}
 	float: left;
 	h2 {width: 4rem;}
 	h3 {
+		padding: 0 7px;
 		&.h2 {width: 4rem; padding: 0 2px;}
+		&.longer {padding: 0}
 	}
 	#AC + .title h3 {
 		vertical-align: text-top;
 		&.total ~ .box {padding-left: 1.4rem;}
-		&.total ~ .box:last-child {padding-left: 0.9rem;}
-		&.total + .box {padding-left: 3.5rem;}
+		&.total ~ .box:last-child {padding-left: 0.6rem; padding-right: 0}
+		&.total + .box {padding-left: 3rem;}
 	}
 	.longest {width: 18rem;}
-	.longer {width: 11rem;}
+	.longer {width: 10rem; padding-right: 0}
 	&:after {clear: both;}
 }
 
@@ -159,17 +181,18 @@ textarea {
 
 #fight {
 	float: left;
+	margin-bottom: 15px;
 	& > div:first-child {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		.box:first-of-type {margin-right: 11px;}
 	}
 	h2 {width: 4rem;
-		&.wide {width: 8rem;}
+		&.wide {width: 7rem;}
 	}
 	.title{
 		h3 {
-			&.h2 {width: 7.2rem;}
-			&.box {margin-left: 0.95rem}
+			&.h2 {width: 6.5rem;}
+			&.box {margin-left: 0.75rem}
 		}
 	}
 }
@@ -184,15 +207,15 @@ textarea {
 		border: 1px solid #000;
 		h2 {display: block;}
 		h3 {
-			width: 1.75rem;
+			width: 1.7rem;
 			&.label {
 				font-weight: 500;
-				width: 8rem;
+				width: 6.5rem;
 				padding: 0 1.2rem 0 1.5rem;
 				text-align: left;
 			}			
 			&:nth-child(n+4) {
-				padding-right: 1.25rem;
+				padding-right: 1.15rem;
 			}
 			&:last-child {
 				padding-right: 0;
@@ -203,7 +226,7 @@ textarea {
 		label {
 			font-size: 0.8em;
 			display: inline-block;
-			width: 11rem;
+			width: 9.5rem;
 			font-variant: small-caps;
 			input {
 				margin-right: 10px;
@@ -247,23 +270,24 @@ textarea {
 		position: relative;
 		z-index: 10;
 		.h2 {
-			width: 7rem;
+			width: 6rem;
 			font-size: 0.7em;
 			font-weight: 500;
 			padding: 0 2px;
 		}
 		.box {
-			padding-right: 1.4rem;
+			padding-right: 1.25rem;
+			&.shade {width: 2.2rem}
 		}
 		.notes {
-			width: 7rem;
+			width: 6.5rem;
 			font-size: 0.5em;
 			font-weight: 500;
 		}
 	}
 	.rows {
 		display: inline-block;
-		h2 {width: 7rem;}
+		h2 {width: 6rem;}
 		h3 {
 			&.h2 {width: 8rem; padding: 0 2px;}
 		}
@@ -271,7 +295,7 @@ textarea {
 	#notes {
 		display: inline-block;
 		textarea {
-			width: 7rem;
+			width: 6.5rem;
 			height: 6.5rem;
 			margin: -15px 0 0 10px;
 			vertical-align: -15px;
@@ -326,15 +350,15 @@ textarea {
 	display: block;
 	float: left;
 	.attack {
-		width: 40rem;
+		width: 38rem;
 		div {
 			float: left;
 			padding: 0;
 			margin: 0;
 			text-align: center;
 			&.box {width: 6rem;}
-			&.wide {width: 14rem;}
-			&.long {width: 28rem;}
+			&.wide {width: 13rem;}
+			&.long {width: 26rem;}
 			&:first-child label {
 				font-size: 1em;
 				margin-top: -7px;

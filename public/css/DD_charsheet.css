@@ -51,6 +51,12 @@ h3.total {
   font-size: 0.7em;
   font-weight: 500;
 }
+input[type='number'] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+  -o-appearance: textfield !important;
+  appearance: textfield !important;
+}
 input,
 textarea {
   border: 1px solid #000;
@@ -92,7 +98,7 @@ textarea[readonly] {
   border-color: #ddd;
 }
 /*******************************
-	Logo
+  Logo
 ********************************/
 #logo {
   width: 30%;
@@ -102,7 +108,7 @@ textarea[readonly] {
   width: 100%;
 }
 /*******************************
-	Character Info
+  Character Info
 ********************************/
 #charInfo {
   width: 60%;
@@ -139,7 +145,7 @@ textarea[readonly] {
   width: 3.8rem;
 }
 /*******************************
-	Abilities
+  Abilities
 ********************************/
 #abilities {
   float: left;
@@ -152,7 +158,7 @@ textarea[readonly] {
   padding: 0 2px;
 }
 /*******************************
-	Hit Points
+  Hit Points
 ********************************/
 #hitPoints {
   float: left;
@@ -189,7 +195,7 @@ textarea[readonly] {
   clear: both;
 }
 /*******************************
-	Fight
+  Fight
 ********************************/
 #fight {
   float: left;
@@ -213,7 +219,7 @@ textarea[readonly] {
   margin-left: 0.95rem;
 }
 /*******************************
-	Skills
+  Skills
 ********************************/
 #skills {
   float: right;
@@ -272,7 +278,7 @@ textarea[readonly] {
   text-transform: uppercase;
 }
 /*******************************
-	Saving throws
+  Saving throws
 ********************************/
 #saving {
   float: left;
@@ -317,7 +323,7 @@ textarea[readonly] {
   resize: none;
 }
 /*******************************
-	Attack Info
+  Attack Info
 ********************************/
 #attackInfo {
   float: left;
@@ -362,7 +368,7 @@ textarea[readonly] {
   width: 3rem;
 }
 /*******************************
-	Attack List
+  Attack List
 ********************************/
 #attackList {
   display: block;
