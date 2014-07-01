@@ -14,6 +14,11 @@ section {
   width: 1024px;
   margin: 25px auto;
 }
+@media (max-width: 768px) {
+  #charsheet {
+    width: 768px;
+  }
+}
 h2 {
   background: #000;
   color: #fff;
@@ -106,6 +111,18 @@ textarea[readonly],
 span.input[readonly] {
   border-color: #ddd;
 }
+@media (max-width: 768px) {
+  input,
+  textarea,
+  span.input {
+    width: 2rem;
+  }
+  input.wide,
+  textarea.wide,
+  span.input.wide {
+    width: 4.2rem;
+  }
+}
 span.input.box {
   padding: 4px 4px 0;
 }
@@ -118,6 +135,15 @@ span.input.box {
 }
 #logo img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+  #logo img {
+    max-width: 300px;
+  }
 }
 /*******************************
 	Character Info
@@ -133,6 +159,7 @@ span.input.box {
   display: block;
   overflow: hidden;
   text-align: left;
+  text-transform: capitalize;
 }
 #charInfo label {
   display: block;
@@ -161,6 +188,23 @@ span.input.box {
   width: 100%;
   vertical-align: top;
   text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  #charInfo {
+    width: 100%;
+  }
+  #charInfo div.longest {
+    width: 22.5rem;
+  }
+  #charInfo div.long {
+    width: 16.5rem;
+  }
+  #charInfo div.wide {
+    width: 6.7rem;
+  }
+  #charInfo div.short {
+    width: 4.7rem;
+  }
 }
 /*******************************
 	Abilities
@@ -259,33 +303,41 @@ span.input.box {
   display: block;
 }
 #skills div.title h3 {
-  width: 1.7rem;
+  width: 1.3rem;
 }
 #skills div.title h3.label {
   font-weight: 500;
-  width: 6.5rem;
-  padding: 0 1.2rem 0 1.5rem;
+  width: 5rem;
+  padding: 0 1.4rem 0 1.5rem;
   text-align: left;
 }
+#skills div.title h3:nth-child(3) {
+  padding-right: 0.15rem;
+}
 #skills div.title h3:nth-child(n+4) {
-  padding-right: 1.15rem;
+  padding-right: 1.1rem;
 }
 #skills div.title h3:last-child {
   padding-right: 0;
 }
+@media (max-width: 768px) {
+  #skills div.title h3 span {
+    display: none;
+  }
+}
 #skills div.skill label {
   font-size: 0.8em;
   display: inline-block;
-  width: 9.5rem;
+  width: 8rem;
   font-variant: small-caps;
 }
 #skills div.skill label input {
-  margin-right: 10px;
+  margin-right: 5px;
   width: auto;
 }
 #skills div.skill input {
   width: 1.25rem;
-  padding: 0 4px;
+  padding: 0 0px;
   font-size: 0.9em;
 }
 #skills div.skill .key {
@@ -353,6 +405,30 @@ span.input.box {
   padding-top: 1em;
   resize: none;
 }
+@media (max-width: 768px) {
+  #saving .box {
+    width: 1.3rem;
+  }
+  #saving .title .box {
+    padding-right: 1.18rem;
+  }
+  #saving h3.box.shade {
+    padding-right: 0;
+  }
+  #saving .notes {
+    display: none;
+  }
+  #saving #notes {
+    display: block;
+  }
+  #saving #notes textarea {
+    margin: 10px 0 0 0;
+    vertical-align: 0;
+    width: 100%;
+    height: 3rem;
+    padding-top: 0;
+  }
+}
 /*******************************
 	Attack Info
 ********************************/
@@ -398,6 +474,34 @@ span.input.box {
 #attackInfo input.wide {
   width: 3rem;
 }
+@media (max-width: 768px) {
+  #attackInfo input.box {
+    width: 1.8rem;
+  }
+  #attackInfo input.box.wide {
+    width: 3.4rem;
+  }
+  #attackInfo h3.box {
+    padding-right: 1.1rem;
+  }
+  #attackInfo h3.box:last-child {
+    padding-right: 0;
+  }
+  #attackInfo h3.box.wide {
+    width: 3.5rem;
+    padding-right: 1rem;
+  }
+  #attackInfo h2 {
+    width: 5rem;
+  }
+  #attackInfo h2.wide {
+    width: 8.5rem;
+    margin-left: 0;
+  }
+  #attackInfo h2.long {
+    width: 9.75rem;
+  }
+}
 /*******************************
 	Attack List
 ********************************/
@@ -407,6 +511,11 @@ span.input.box {
 }
 #attackList .attack {
   width: 38rem;
+}
+@media (max-width: 768px) {
+  #attackList .attack {
+    width: 25.75rem;
+  }
 }
 #attackList .attack div {
   float: left;
@@ -428,6 +537,17 @@ span.input.box {
   margin-top: -7px;
   border-radius: 8px 8px 0 0;
 }
+@media (max-width: 768px) {
+  #attackList .attack div.box {
+    width: 4rem;
+  }
+  #attackList .attack div.wide {
+    width: 8.85rem;
+  }
+  #attackList .attack div.long {
+    width: 17.7rem;
+  }
+}
 #attackList .attack label {
   display: block;
   width: 100%;
@@ -446,11 +566,22 @@ span.input.box {
   overflow: hidden;
   padding: 8px 0;
 }
+@media (max-width: 768px) {
+  #attackList .attack input {
+    padding: 4px 0;
+  }
+}
 #attackList .attack .ammo {
   padding-top: 5px;
   margin-bottom: 35px;
   font-size: 0.7em;
   text-transform: uppercase;
+}
+#attackList .attack .ammo .xl {
+  display: inline;
+}
+#attackList .attack .ammo .xs {
+  display: none;
 }
 #attackList .attack .ammo span {
   font-weight: 500;
@@ -463,4 +594,16 @@ span.input.box {
   padding: 0 5px;
   margin: 0 10px;
   width: 10rem;
+}
+@media (max-width: 768px) {
+  #attackList .attack .ammo .xl {
+    display: none;
+  }
+  #attackList .attack .ammo .xs {
+    display: none;
+  }
+  #attackList .attack .ammo input.line {
+    width: 5rem;
+    margin: 0 5px 0 0;
+  }
 }

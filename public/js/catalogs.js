@@ -87,16 +87,41 @@ var catalogRaces =		[{	raceName				:	"human",
 							raceSize				:	"medium"
 						}];
 
-var catalogSize =		{	Fine		:	8,
-							Diminutive	:	4,
-							Tiny		:	2,
-							Small		:	1,
-							Medium		:	0,
-							Large		:	-1,
-							Huge		:	-2,
-							Gargantuan	:	-4,
-							Colossal	:	-8
-						};
+var catalogSize =		[{	sizeName	:	'fine',
+							sizeMod		:	8
+						},
+						{
+							sizeName	:	'fiminutive',
+							sizeMod		:	4
+						},
+						{
+							sizeName	:	'tiny',
+							sizeMod		:	2
+						},
+						{
+							sizeName	:	'small',
+							sizeMod		:	1
+						},
+						{
+							sizeName	:	'medium',
+							sizeMod		:	0
+						},
+						{
+							sizeName	:	'large',
+							sizeMod		:	-1
+						},
+						{
+							sizeName	:	'huge',
+							sizeMod		:	-2
+						},
+						{
+							sizeName	:	'gargantuan',
+							sizeMod		:	-4
+						},
+						{
+							sizeName	:	'colossal',
+							sizeMod		:	-8
+						}];
 
 var catalogSalving =	{	level01: [ 2, 0],
 							level02: [ 3, 0],

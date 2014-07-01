@@ -45,12 +45,12 @@
 				<label for="charLevel">Level</label>
 			</div>
 			<div class="wide">
-				<select ng-model="charRace" ng-controller="dropdrownGenerator" name="charRace" tabindex="6">
+				<select ng-model="charRace" ng-controller="raceSelection" name="charRace" tabindex="6">
 				    <option ng-repeat="race in races">{{ race.raceName }}</option>
 				</select>
 			</div>
 			<div class="wide">
-				<select ng-model="charAlignment" ng-controller="dropdrownGenerator" name="charAlignment" tabindex="6">
+				<select ng-model="charAlignment" ng-controller="alignSelection" name="charAlignment" tabindex="6">
 				    <option ng-repeat="align in alignment">{{ align }}</option>
 				</select>
 				<label for="charAlignment">Alignment</label>
@@ -168,7 +168,7 @@
 				<input type="text" class="box wide" name="HP-nonlethal">
 				<input type="number" class="box title longer" name="Speed" readonly />
 			</div>
-			<div id="AC">
+			<div id="AC" ng-controller="ACsum" >
 				<h2>AC <span>Armor class</span></h2>
 				<!-- <span class="box input" ng-model="AC-total" readonly>{{AC-armor + AC-shield + AC-DEX-mod + AC-size-mod + AC-natural + AC-defl-mod + AC-misc-mod }}</span> = 10 + -->
 				<input type="number" class="box total" name="AC-total" readonly /> = 10 + 
@@ -229,10 +229,10 @@
 		  	<h2>Skills</h2>
 		  	<h3 class="label">Skill name</h3>
 		  	<h3>Key ability</h3>
-		  	<h3>Skill modifier</h3>
-		  	<h3>Ability modifier</h3>
+		  	<h3>Skill mod<span>ifier</span></h3>
+		  	<h3>Ability mod<span>ifier</span></h3>
 		  	<h3>Ranks</h3>
-		  	<h3>Misc modifier</h3>
+		  	<h3>Misc mod<span>ifier</span></h3>
 		  	</div>
 			  	<div class="skill basic" id="skill-appraise">
 		  		<label><input type="checkbox" name="" />Appraise</label>
@@ -671,7 +671,7 @@
 					<input type="text" name="at-notes-1" />
 	    		</div>
 	    		<div class="ammo">
-		    		<span>Ammunition</span>
+		    		<span class="xl">Ammunition</span><span class="xs">Ammo</span>
 		    		<input class="line" type="text" name="at-ammo-1" />
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
@@ -710,7 +710,7 @@
 					<input type="text" name="at-notes-2" />
 	    		</div>
 	    		<div class="ammo">
-		    		<span>Ammunition</span>
+		    		<span class="xl">Ammunition</span><span class="xs">Ammo</span>
 		    		<input class="line" type="text" name="at-ammo-2" />
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
@@ -749,7 +749,7 @@
 					<input type="text" name="at-notes-3" />
 	    		</div>
 	    		<div class="ammo">
-		    		<span>Ammunition</span>
+		    		<span class="xl">Ammunition</span><span class="xs">Ammo</span>
 		    		<input class="line" type="text" name="at-ammo-3" />
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
@@ -788,7 +788,7 @@
 					<input type="text" name="at-notes-4" />
 	    		</div>
 	    		<div class="ammo">
-		    		<span>Ammunition</span>
+		    		<span class="xl">Ammunition</span><span class="xs">Ammo</span>
 		    		<input class="line" type="text" name="at-ammo-4" />
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
 		    		<input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/>
