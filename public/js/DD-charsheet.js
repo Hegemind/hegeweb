@@ -31,7 +31,16 @@ function raceSelection($scope) {
 }
 
 function abilitySelection($scope) {
-    var ATR = $(this).attr(id).val();
+    var score = $(this).find('[name$=-score]'),
+        mod = $(this).find('[name$=-mod]'),
+        tScore = $(this).find('[name$=-tscore]'),
+        tMod = $(this).find('[name$=-tmod]'),
+        ATR = score.val();
+
+    score.on('change', function(){
+      mod.val(Math.floor((score/2)-5));
+      $('[name$="'+ATR+'-mod"]').val(mod);
+    })
 }
 
 function ACsum($scope) {
