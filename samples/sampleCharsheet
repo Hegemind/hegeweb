@@ -1,0 +1,43 @@
+{
+	"creation":1405039842,
+	"id":"h7sYYXjDTUcw8P",
+    "name": "Artar",
+    "akas":["nickname","another nickname"],
+    "level": 2,
+    "XP":2500,
+    "gender":"male",
+    "race": "human",
+    "alignment": "Legal Neutral",
+    "deity":"none",
+    "age":28,
+    "biography":"Artar is hunting the dragon who slew his mentor.",
+    "appareance":{
+	    "height":185,
+	    "weight":85,
+	    "eyes":"gray",
+	    "hair":"golden",
+	    "skin":"pale"
+	},
+	"setting":{
+		"system":"d20",
+		"game":"AD&D 3.5",
+		"theme":"fantasy",
+		"time":"medieval"
+	},
+	"abilities":{
+		"STR":[15],
+		"DEX":[9],
+		"CON":[16],
+		"INT":[8],
+		"WIS":[11],
+		"CHA":[12],
+	},
+	"skills":{
+		"name":3,
+		"name":3,
+		"name":3
+	},
+	"equipment":[{},{},{}],
+	"powers":[{},{},{}],
+	"updates":[{},{},{}]
+}
