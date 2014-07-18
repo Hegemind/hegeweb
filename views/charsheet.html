@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="../public/css/core-styles.css" rel="stylesheet">
     <link href="../public/css/dashboard.css" rel="stylesheet">
+    <link href="../public/css/charsheet/dnd35.css" rel="stylesheet">
     <link href="../public/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -46,7 +47,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-sm-2 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="characters.html"><img src="../public/img/menu-icons/characters.png" />Characters</a></li>
             <li><a href="companies.html"><img src="../public/img/menu-icons/companies.png" />Companies</a></li>
@@ -55,176 +56,196 @@
             <li><a href="reference.html"><img src="../public/img/menu-icons/reference.png" />Reference</a></li>
           </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">   
-          <article class="charsheet dnd">
+        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">   
+          <article class="whiteshade charsheet dnd">
             <section id="intro">
               <img class="avatar" src="../public/img/avatars/alin.jpg" />
               <h1 class="page-header">Alin Khori</h1>
               <p class="sub">Male dwarf 2nd level slave.</p>
-              <p class="bio">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+              <p class="bio">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna.</p>
               <img class="systemLogo" src="../public/img/logo-dd.png" />
-              <div class="btn-group btn-group-justified">
+              <div class="btn-group btn-group-justified darken">
                 <a href="" class="btn btn-default"><i class="fa fa-pencil-square-o"></i> Edit</a>
                 <a href="" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
                 <a href="" class="btn btn-default"><i class="fa fa-share-square-o"></i> Share</a>
-                <a href="" class="btn btn-default"><i class="fa fa-plus-square-o"></i> Add to company</a>
+                <a href="" class="btn btn-default"><i class="fa fa-plus-square-o"></i> Add company</a>
                 <a href="" class="btn btn-default"><i class="fa fa-cubes"></i> Play now</a>
                 <a href="" class="btn btn-default"><i class="fa fa-trash-o"></i> Delete</a>
               </div>
             </section>
             <!-- <hr /> -->
-            <section id="basicInfo" class="row">
+            <section id="basicInfo" class="col-md-12 col-sm-6">
               <!-- <div class="col-md-4"><input type="text" name="charName" value="Alin Khori" /><label>Character name</label></div> -->
               <!--<div class="col-md-4"><input type="text" name="playerName" value="Esteban Díaz" /><label>Player name</label></div>-->
-              <div class="col-md-2"><input type="text" name="charRace" value="Dwarf" /><label>Race</label></div>
-              <div class="col-md-2"><input type="text" name="charClass" value="Slave" /><label>Class</label></div>
-              <div class="col-md-1"><input type="text" name="charLevel" value="2" class="text-center"/><label>Level</label></div>
-              <div class="col-md-1"><input type="text" name="charAge" value="34" /><label>Age</label></div>
-              <div class="col-md-2"><input type="text" name="charAlign" value="Chaotic good" /><label>Alignment</label></div>
-              <div class="col-md-2"><input type="text" name="charDeity" value="None" /><label>Deity</label></div>
-              <div class="col-md-2"><input type="text" name="charSize" value="Small" /><label>Size</label></div>
-              <div class="col-md-2"><input type="text" name="charGender" value="Male" /><label>Gender</label></div>
-              <div class="col-md-2"><input type="text" name="charHeight" value="120 cm" /><label>Height</label></div>
-              <div class="col-md-2"><input type="text" name="charWeight" value="70 kg" /><label>Weight</label></div>
-              <div class="col-md-2"><input type="text" name="charEyes" value="Silver" /><label>Eyes</label></div>
-              <div class="col-md-2"><input type="text" name="charHair" value="Black" /><label>Hair</label></div>
-              <div class="col-md-2"><input type="text" name="charSkin" value="Dark" /><label>Skin</label></div>
+              <div class="row">
+                <div class="col-md-2 col-sm-6"><input type="text" name="charRace" value="Dwarf" /><label>Race</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charClass" value="Slave" /><label>Class</label></div>
+                <div class="col-md-1 col-sm-3"><input type="text" name="charLevel" value="2" class="text-center"/><label>Level</label></div>
+                <div class="col-md-1 col-sm-3"><input type="text" name="charAge" value="34" /><label>Age</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charAlign" value="Chaotic good" /><label>Alignment</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charDeity" value="None" /><label>Deity</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charSize" value="Small" /><label>Size</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charGender" value="Male" /><label>Gender</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charHeight" value="120 cm" /><label>Height</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charWeight" value="70 kg" /><label>Weight</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charEyes" value="Silver" /><label>Eyes</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charHair" value="Black" /><label>Hair</label></div>
+                <div class="col-md-2 col-sm-6"><input type="text" name="charSkin" value="Dark" /><label>Skin</label></div>
+              </div>
             </section>
             <div class="row">
-              <section id="abilities" class="col-md-4"> 
-                <dl class="titles">
-                  <dt></dt>
-                  <dd><p>Ability score</p></dd>
-                  <dd><p>Ability modifier</p></dd>
-                  <dd><p>Temporal score</p></dd>
-                  <dd><p>Temporal modifier</p></dd>
+              <section id="abilities" class="col-md-4 col-sm-6"> 
+                <dl class="row titles">
+                  <dt class="col-xs-4"></dt>
+                  <dd class="col-xs-2"><p>Ability score</p></dd>
+                  <dd class="col-xs-2"><p>Ability modifier</p></dd>
+                  <dd class="col-xs-2"><p>Temporal score</p></dd>
+                  <dd class="col-xs-2"><p>Temporal modifier</p></dd>
                 </dl>
-                <dl>
-                  <dt>STR <span>Strength</span></dt>
-                  <dd><input type="text" name="STRval" value="18" /></dd>
-                  <dd><input type="text" name="STRmod" value="+3" /></dd>
-                  <dd class="tmp"><input type="text" name="STRval-t" value="18" /></dd>
-                  <dd class="tmp"><input type="text" name="STRmod-t" value="+3" /></dd>
+                <dl class="row">
+                  <dt class="col-xs-4">STR <span>Strength</span></dt>
+                  <dd class="col-xs-2"><input type="text" name="STRval" value="8" /></dd>
+                  <dd class="col-xs-2"><input type="text" name="STRmod" value="-1" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="STRval-t" value="" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="STRmod-t" value="" /></dd>
                 </dl>
-                <dl>
-                  <dt>DEX <span>Dexterity</span></dt>
-                  <dd><input type="text" name="DEXval" value="18" /></dd>
-                  <dd><input type="text" name="DEXmod" value="+3" /></dd>
-                  <dd class="tmp"><input type="text" name="DEXval-t" value="18" /></dd>
-                  <dd class="tmp"><input type="text" name="DEXmod-t" value="+3" /></dd>
+                <dl class="row">
+                  <dt class="col-xs-4">DEX <span>Dexterity</span></dt>
+                  <dd class="col-xs-2"><input type="text" name="DEXval" value="15" /></dd>
+                  <dd class="col-xs-2"><input type="text" name="DEXmod" value="+2" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="DEXval-t" value="" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="DEXmod-t" value="" /></dd>
                 </dl>
-                <dl>
-                  <dt>CON <span>Constitution</span></dt>
-                  <dd><input type="text" name="CONval" value="18" /></dd>
-                  <dd><input type="text" name="CONmod" value="+3" /></dd>
-                  <dd class="tmp"><input type="text" name="CONval-t" value="18" /></dd>
-                  <dd class="tmp"><input type="text" name="CONmod-t" value="+3" /></dd>
+                <dl class="row">
+                  <dt class="col-xs-4">CON <span>Constitution</span></dt>
+                  <dd class="col-xs-2"><input type="text" name="CONval" value="12" /></dd>
+                  <dd class="col-xs-2"><input type="text" name="CONmod" value="+1" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="CONval-t" value="" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="CONmod-t" value="" /></dd>
                 </dl>
-                <dl>
-                  <dt>INT <span>Intelligence</span></dt>
-                  <dd><input type="text" name="INTval" value="18" /></dd>
-                  <dd><input type="text" name="INTmod" value="+3" /></dd>
-                  <dd class="tmp"><input type="text" name="INTval-t" value="18" /></dd>
-                  <dd class="tmp"><input type="text" name="INTmod-t" value="+3" /></dd>
+                <dl class="row">
+                  <dt class="col-xs-4">INT <span>Intelligence</span></dt>
+                  <dd class="col-xs-2"><input type="text" name="INTval" value="10" /></dd>
+                  <dd class="col-xs-2"><input type="text" name="INTmod" value="+0" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="INTval-t" value="" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="INTmod-t" value="" /></dd>
                 </dl>
-                <dl>
-                  <dt>WIS <span>Wisdom</span></dt>
-                  <dd><input type="text" name="WISval" value="18" /></dd>
-                  <dd><input type="text" name="WISmod" value="+3" /></dd>
-                  <dd class="tmp"><input type="text" name="WISval-t" value="18" /></dd>
-                  <dd class="tmp"><input type="text" name="WISmod-t" value="+3" /></dd>
+                <dl class="row">
+                  <dt class="col-xs-4">WIS <span>Wisdom</span></dt>
+                  <dd class="col-xs-2"><input type="text" name="WISval" value="10" /></dd>
+                  <dd class="col-xs-2"><input type="text" name="WISmod" value="+0" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="WISval-t" value="" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="WISmod-t" value="" /></dd>
                 </dl>
-                <dl>
-                  <dt>CHA <span>Charisma</span></dt>
-                  <dd><input type="text" name="CHAval" value="18" /></dd>
-                  <dd><input type="text" name="CHAmod" value="+3" /></dd>
-                  <dd class="tmp"><input type="text" name="CHAval-t" value="18" /></dd>
-                  <dd class="tmp"><input type="text" name="CHAmod-t" value="+3" /></dd>
-                </dl>
-              </section>
-              <section id="defense" class="col-md-8">
-                <dl class="titles">
-                  <dt></dt>
-                  <dd class="highlight"><p>TOTAL<p></dd>
-                  <dd class="wider"><p>Current hits</p></p></dd>
-                  <dd class="double"><p>Non-lethal damage</p></dd>
-                  <dd class="wide highlight"><p>Speed</p></dd>
-                </dl>
-                <dl>
-                  <dt>HP <span>Hit points</span></dt>
-                  <dd><input type="text" name="HPtotal" value="18" /></dd>
-                  <dd class="wider"><input type="text" name="HPcurrent" value="18" /></dd>
-                  <dd class="double"><input type="text" name="HPnosting" value="18" /></dd>
-                  <dd class="wide"><input type="text" name="HPspeed" value="18" /></dd>
-                </dl>
-                <dl>
-                  <dt>AC <span>Armor Class</span></dt>
-                  <dd><input type="text" name="ACtotal" value="18" /></dd> = <b>10</b> +
-                  <dd><input type="text" name="AC-armor-mod" value="18" /></dd> +
-                  <dd><input type="text" name="AC-shield-mod;" value="18" /></dd> +
-                  <dd><input type="text" name="AC-DEX-mod" value="18" /></dd> +
-                  <dd><input type="text" name="AC-size-mod" value="18" /></dd> +
-                  <dd><input type="text" name="AC-natural" value="18" /></dd> +
-                  <dd><input type="text" name="AC-deflec" value="18" /></dd> +
-                  <dd><input type="text" name="AC-varios" value="18" /></dd>
-                </dl>
-                <dl class="titles top">
-                  <dt></dt>
-                  <dd class="highlight"><p>TOTAL<p></dd> 
-                  <dd class="number"></dd> 
-                  <dd class="symbol"><p>Armor bonus<p></dd> 
-                  <dd class="symbol"><p>Shield bonus<p></dd>
-                  <dd class="symbol"><p>DEX bonus<p></dd>
-                  <dd class="symbol"><p>Size bonus<p></dd>
-                  <dd class="symbol"><p>Natural armor<p></dd>
-                  <dd class="symbol"><p>Deflection bonus<p></dd>
-                  <dd><p>Misc. bonus<p></dd>
+                <dl class="row">
+                  <dt class="col-xs-4">CHA <span>Charisma</span></dt>
+                  <dd class="col-xs-2"><input type="text" name="CHAval" value="10" /></dd>
+                  <dd class="col-xs-2"><input type="text" name="CHAmod" value="+0" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="CHAval-t" value="" /></dd>
+                  <dd class="col-xs-2 tmp"><input type="text" name="CHAmod-t" value="" /></dd>
                 </dl>
               </section>
-              <section id="saving" class="col-md-8">
-                <dl class="titles">
-                  <dt></dt>
-                  <dd class="highlight symbol"><p>TOTAL<p></dd>
-                  <dd class="symbol"><p>Base score</p></dd>
-                  <dd class="symbol"><p>Ability modifier</p></dd>
-                  <dd class="symbol"><p>Magic modifier</p></dd>
-                  <dd class="symbol"><p>Misc. modifier</p></dd>
-                  <dd><p>Temporal modifier</p></dd>
-                  <dd class="wide"><p>Conditional modifiers</p></dd>
+              <section id="defense" class="col-md-8 col-sm-12">
+                <dl class="row titles">
+                  <dt class="col-xs-2"></dt>
+                  <dd class="col-xs-1 highlight"><p>TOTAL<p></dd>
+                  <dd class="col-xs-4"><p>Current hits</p></p></dd>
+                  <dd class="col-xs-2"><p>Non-lethal damage</p></dd>
+                  <dd class="col-xs-3 highlight"><p>Speed</p></dd>
                 </dl>
-                <dl>
-                  <dt>Fortitude <span>(Constitution)</span></dt>
-                  <dd><input type="text" name="FOR-total" value="18" /></dd> =
-                  <dd><input type="text" name="FOR-base" value="18" /></dd> +
-                  <dd><input type="text" name="FOR-CON-mod;" value="18" /></dd> +
-                  <dd><input type="text" name="FOR-magic-mod" value="18" /></dd> +
-                  <dd><input type="text" name="FOR-misc-mod" value="18" /></dd> +
-                  <dd class="tmp"><input type="text" name="FOR-tmp-mod" value="18" /></dd>
+                <dl class="row">
+                  <dt class="col-xs-2">HP <span>Hit points</span></dt>
+                  <dd class="col-xs-1"><input type="text" name="HPtotal" value="14" /></dd>
+                  <dd class="col-xs-4"><input type="text" name="HPcurrent" value="" /></dd>
+                  <dd class="col-xs-2"><input type="text" name="HPnosting" value="0" /></dd>
+                  <dd class="col-xs-3"><input type="text" name="HPspeed" value="30" /></dd>
                 </dl>
-                <dl>
-                  <dt>Reflex <span>(Dexterity)</span></dt>
-                  <dd><input type="text" name="REF-total" value="18" /></dd> =
-                  <dd><input type="text" name="REF-base" value="18" /></dd> +
-                  <dd><input type="text" name="REF-DEX-mod;" value="18" /></dd> +
-                  <dd><input type="text" name="REF-magic-mod" value="18" /></dd> +
-                  <dd><input type="text" name="REF-misc-mod" value="18" /></dd> +
-                  <dd class="tmp"><input type="text" name="REF-tmp-mod" value="18" /></dd>
+                <dl class="row">
+                  <dt class="col-xs-2">AC <span>Armor Class</span></dt>
+                  <dd class="col-xs-1"><input type="text" name="ACtotal" value="17" /></dd>
+                  <dd class="col-xs-1 text">=<b>10</b>+</dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="AC-armor-mod" value="+4" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="AC-shield-mod;" value="0" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="AC-DEX-mod" value="+2" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="AC-size-mod" value="+1" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="AC-natural" value="0" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="AC-deflec" value="0" /></dd>
+                  <dd class="col-xs-1"><input type="text" name="AC-varios" value="0" /></dd>
                 </dl>
-                <dl>
-                  <dt>Will <span>(Wisdom)</span></dt>
-                  <dd><input type="text" name="WIL-total" value="18" /></dd> =
-                  <dd><input type="text" name="WIL-base" value="18" /></dd> +
-                  <dd><input type="text" name="WIL-WIS-mod;" value="18" /></dd> +
-                  <dd><input type="text" name="WIL-magic-mod" value="18" /></dd> +
-                  <dd><input type="text" name="WIL-misc-mod" value="18" /></dd> +
-                  <dd class="tmp"><input type="text" name="WIL-tmp-mod" value="18" /></dd>
+                <dl class="titles top row">
+                  <dt class="col-xs-2"></dt>
+                  <dd class="col-xs-1 highlight"><p>TOTAL<p></dd> 
+                  <dd class="col-xs-1"></dd> 
+                  <dd class="col-xs-1 plus"><p>Armor bonus<p></dd> 
+                  <dd class="col-xs-1 plus"><p>Shield bonus<p></dd>
+                  <dd class="col-xs-1 plus"><p>DEX bonus<p></dd>
+                  <dd class="col-xs-1 plus"><p>Size bonus<p></dd>
+                  <dd class="col-xs-1 plus"><p>Natural armor<p></dd>
+                  <dd class="col-xs-1 plus"><p>Deflection bonus<p></dd>
+                  <dd class="col-xs-1"><p>Misc. bonus<p></dd>
+                </dl>
+              </section>
+              <section id="saving" class="col-md-8 col-sm-12">
+                 <dl class="titles row">
+                  <dt class="col-xs-3"></dt>
+                  <dd class="col-xs-1 highlight plus"><p>TOTAL<p></dd> 
+                  <dd class="col-xs-1 plus"><p>Base score<p></dd> 
+                  <dd class="col-xs-1 plus"><p>Ability modifier<p></dd>
+                  <dd class="col-xs-1 plus"><p>Magic modifier<p></dd>
+                  <dd class="col-xs-1 plus"><p>Misc. modifier<p></dd>
+                  <dd class="col-xs-1"><p>Temporal modifier<p></dd>
+                  <dd class="col-xs-2"><p>Temporal modifier<p></dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-xs-3">Fortitude <span>(Constitution)</span></dt>
+                  <dd class="col-xs-1 equal"><input type="text" name="FOR-total" value="17" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="FOR-base;" value="0" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="FOR-CON-mod" value="+2" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="FOR-magic-mod" value="+1" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="FOR-misc-mod" value="0" /></dd>
+                  <dd class="col-xs-1 tmp"><input type="text" name="FOR-tmp-mod" value="0" /></dd>
+                  <dd class="col-xs-2"><textarea></textarea></dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-xs-3">Reflex <span>(Dexterity)</span></dt>
+                  <dd class="col-xs-1 equal"><input type="text" name="REF-total" value="17" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="REF-base;" value="0" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="REF-DEX-mod" value="+2" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="REF-magic-mod" value="+1" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="REF-misc-mod" value="0" /></dd>
+                  <dd class="col-xs-1 tmp"><input type="text" name="REF-tmp-mod" value="0" /></dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-xs-3">Will <span>(Wisdom)</span></dt>
+                  <dd class="col-xs-1 equal"><input type="text" name="WIL-total" value="17" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="WIL-base;" value="0" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="WIL-WIS-mod" value="+2" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="WIL-magic-mod" value="+1" /></dd>
+                  <dd class="col-xs-1 plus"><input type="text" name="WIL-misc-mod" value="0" /></dd>
+                  <dd class="col-xs-1 tmp"><input type="text" name="WIL-tmp-mod" value="0" /></dd>
                 </dl>
               </section>
               <div class="col-md-7">
+                <section id="attackInfo">
+                  <dl class="row">
+                    <dt class="col-xs-3">Base attack</dt>
+                    <dd class="col-xs-2"><input type="text" name="base-attack" value="10" /></dd>
+                    <dt class="col-xs-5">Spell Resistance </dt>
+                    <dd class="col-xs-2"><input type="text" name="base-attack" value="10" /></dd>
+                  </dl>
+                  <dl class="row">
+                    <dt class="col-xs-3">Grubble</dt>
+                    <dd class="col-xs-2 equal"><input type="text" name="base-attack" value="10" /></dd>
+                    <dd class="col-xs-2 plus"><input type="text" name="base-attack" value="10" /></dd>
+                    <dd class="col-xs-1 plus"><input type="text" name="base-attack" value="10" /></dd>
+                    <dd class="col-xs-1 plus"><input type="text" name="base-attack" value="10" /></dd>
+                    <dd class="col-xs-1"><input type="text" name="base-attack" value="10" /></dd>
+                  </dl>
+                </section>
                 <section id="attacks">
                   <div class="attack row">
                     <div class="col-sm-5"><label for="attackName01">Attack</label><input type="text" name="attackName01" /></div>
-                    <div class="col-sm-3"><label for="attackBonus01">Total bonus</label><input type="text" name="attackBonus01" /></div>
+                    <div class="col-sm-3"><label for="attackBonus01"> bonus</label><input type="text" name="attackBonus01" /></div>
                     <div class="col-sm-2"><label for="attackDamage01">Damage</label><input type="text" name="attackDamage01" /></div>
                     <div class="col-sm-2"><label for="attackCritical01">Critical</label><input type="text" name="attackCritical01" /></div>
                     <div class="col-sm-3"><label for="attackRange01">Range</label><input type="text" name="attackRange01" /></div>
@@ -233,7 +254,7 @@
                   </div>
                   <div class="attack row">
                     <div class="col-sm-5"><label for="attackName02">Attack</label><input type="text" name="attackName02" /></div>
-                    <div class="col-sm-3"><label for="attackBonus02">Total bonus</label><input type="text" name="attackBonus02" /></div>
+                    <div class="col-sm-3"><label for="attackBonus02"> bonus</label><input type="text" name="attackBonus02" /></div>
                     <div class="col-sm-2"><label for="attackDamage02">Damage</label><input type="text" name="attackDamage02" /></div>
                     <div class="col-sm-2"><label for="attackCritical02">Critical</label><input type="text" name="attackCritical02" /></div>
                     <div class="col-sm-3"><label for="attackRange02">Range</label><input type="text" name="attackRange02" /></div>
@@ -242,7 +263,7 @@
                   </div>
                   <div class="attack row">
                     <div class="col-sm-5"><label for="attackName03">Attack</label><input type="text" name="attackName03" /></div>
-                    <div class="col-sm-3"><label for="attackBonus03">Total bonus</label><input type="text" name="attackBonus03" /></div>
+                    <div class="col-sm-3"><label for="attackBonus03"> bonus</label><input type="text" name="attackBonus03" /></div>
                     <div class="col-sm-2"><label for="attackDamage03">Damage</label><input type="text" name="attackDamage03" /></div>
                     <div class="col-sm-2"><label for="attackCritical03">Critical</label><input type="text" name="attackCritical03" /></div>
                     <div class="col-sm-3"><label for="attackRange03">Range</label><input type="text" name="attackRange03" /></div>
@@ -251,7 +272,7 @@
                   </div>
                   <div class="attack row">
                     <div class="col-sm-5"><label for="attackName04">Attack</label><input type="text" name="attackName04" /></div>
-                    <div class="col-sm-3"><label for="attackBonus04">Total bonus</label><input type="text" name="attackBonus04" /></div>
+                    <div class="col-sm-3"><label for="attackBonus04"> bonus</label><input type="text" name="attackBonus04" /></div>
                     <div class="col-sm-2"><label for="attackDamage04">Damage</label><input type="text" name="attackDamage04" /></div>
                     <div class="col-sm-2"><label for="attackCritical04">Critical</label><input type="text" name="attackCritical04" /></div>
                     <div class="col-sm-3"><label for="attackRange04">Range</label><input type="text" name="attackRange04" /></div>
@@ -261,7 +282,299 @@
                 </section>  
               </div>
               <section id="skills" class="col-md-5">
-                  
+                  <table>
+                  <tr>
+                    <th class="head" colspan="6">Skills</th>
+                  </tr>
+                  <tr>
+                    <th width="48%">Skill name</th>
+                    <th width="8%">Key ability</th>
+                    <th width="11%">Skill modifier</th>
+                    <th width="11%">Ability modifier</th>
+                    <th width="11%">Rank score</th>
+                    <th width="11%">Misc modifier</th>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Appraise</td>
+                    <td><input type="text" name="appraise-key" value="INT" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-INT" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="balance-transclass" value="balance-transclass" />Balance</td>
+                    <td><input type="text" name="balance-key" value="DEX" /></td>
+                    <td><input type="text" name="balance-mod" value="" /></td>
+                    <td><input type="text" name="balance-DEX" value="" /></td>
+                    <td><input type="text" name="balance-rank" value="" /></td>
+                    <td><input type="text" name="balance-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="bluff-transclass" value="bluff-transclass" />Bluff</td>
+                    <td><input type="text" name="bluff-key" value="CHA" /></td>
+                    <td><input type="text" name="bluff-mod" value="" /></td>
+                    <td><input type="text" name="bluff-CHA" value="" /></td>
+                    <td><input type="text" name="bluff-rank" value="" /></td>
+                    <td><input type="text" name="bluff-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="climb-transclass" value="climb-transclass" />Climb</td>
+                    <td><input type="text" name="climb-key" value="STR" /></td>
+                    <td><input type="text" name="climb-mod" value="" /></td>
+                    <td><input type="text" name="climb-STR" value="" /></td>
+                    <td><input type="text" name="climb-rank" value="" /></td>
+                    <td><input type="text" name="climb-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="concentration-transclass" value="concentration-transclass" />Concentration</td>
+                    <td><input type="text" name="concentration-key" value="CON" /></td>
+                    <td><input type="text" name="concentration-mod" value="" /></td>
+                    <td><input type="text" name="concentration-CON" value="" /></td>
+                    <td><input type="text" name="concentration-rank" value="" /></td>
+                    <td><input type="text" name="concentration-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="craft-transclass" value="craft-transclass" />Craft</td>
+                    <td><input type="text" name="craft-key" value="INT" /></td>
+                    <td><input type="text" name="craft-mod" value="" /></td>
+                    <td><input type="text" name="craft-INT" value="" /></td>
+                    <td><input type="text" name="craft-rank" value="" /></td>
+                    <td><input type="text" name="craft-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="decipher-transclass" value="decipher-transclass" />Decipher Script</td>
+                    <td><input type="text" name="decipher-key" value="INT" /></td>
+                    <td><input type="text" name="decipher-mod" value="" /></td>
+                    <td><input type="text" name="decipher-INT" value="" /></td>
+                    <td><input type="text" name="decipher-rank" value="" /></td>
+                    <td><input type="text" name="decipher-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Diplomacy</td>
+                    <td><input type="text" name="appraise-key" value="CHA" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-CHA" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Disable device</td>
+                    <td><input type="text" name="appraise-key" value="INT" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-INT" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Disguise</td>
+                    <td><input type="text" name="appraise-key" value="CHA" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-CHA" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Escape artist</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Forgery</td>
+                    <td><input type="text" name="appraise-key" value="INT" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-INT" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Gather information</td>
+                    <td><input type="text" name="appraise-key" value="CHA" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-CHA" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Handle animal</td>
+                    <td><input type="text" name="appraise-key" value="CHA" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-CHA" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Heal</td>
+                    <td><input type="text" name="appraise-key" value="WIS" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-WIS" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Hide</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Intimidate</td>
+                    <td><input type="text" name="appraise-key" value="CHA" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-CHA" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Jump</td>
+                    <td><input type="text" name="appraise-key" value="STR" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-STR" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Knowledge</td>
+                    <td><input type="text" name="appraise-key" value="INT" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-INT" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Listen</td>
+                    <td><input type="text" name="appraise-key" value="WIS" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-WIS" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Move silently</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Open lock</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Perform</td>
+                    <td><input type="text" name="appraise-key" value="CHA" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-CHA" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Profession</td>
+                    <td><input type="text" name="appraise-key" value="WIS" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-WIS" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Ride</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Search</td>
+                    <td><input type="text" name="appraise-key" value="INT" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-INT" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Sense motive</td>
+                    <td><input type="text" name="appraise-key" value="WIS" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-WIS" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Sleight of hand</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Spellcraft</td>
+                    <td><input type="text" name="appraise-key" value="INT" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-INT" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Spot</td>
+                    <td><input type="text" name="appraise-key" value="WIS" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-WIS" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Survival</td>
+                    <td><input type="text" name="appraise-key" value="WIS" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-WIS" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Swim</td>
+                    <td><input type="text" name="appraise-key" value="STR" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-STR" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Tumble</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Use magic device</td>
+                    <td><input type="text" name="appraise-key" value="CHA" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-CHA" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="appraise-transclass" value="appraise-transclass" />Use rope</td>
+                    <td><input type="text" name="appraise-key" value="DEX" /></td>
+                    <td><input type="text" name="appraise-mod" value="" /></td>
+                    <td><input type="text" name="appraise-DEX" value="" /></td>
+                    <td><input type="text" name="appraise-rank" value="" /></td>
+                    <td><input type="text" name="appraise-misc" value="" /></td>
+                  </tr>
+                </table>
               </section>  
             </div>
           </article>

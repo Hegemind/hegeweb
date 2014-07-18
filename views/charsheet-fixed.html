@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../public/css/core-styles.css" rel="stylesheet">
+    <link href="../public/css/dashboard.css" rel="stylesheet">
+    <link href="../public/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+ </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Hegemon</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="characters.html"><img src="../public/img/menu-icons/characters.png" />Characters</a></li>
+            <li><a href="companies.html"><img src="../public/img/menu-icons/companies.png" />Companies</a></li>
+            <li><a href="campaigns.html"><img src="../public/img/menu-icons/campaigns.png" />Campaigns</a></li>
+            <li><a href="sessions.html"><img src="../public/img/menu-icons/session.png" />Sessions</a></li>
+            <li><a href="reference.html"><img src="../public/img/menu-icons/reference.png" />Reference</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">   
+          <article class="whiteshade charsheet dnd">
+            <section id="intro">
+              <img class="avatar" src="../public/img/avatars/alin.jpg" />
+              <h1 class="page-header">Alin Khori</h1>
+              <p class="sub">Male dwarf 2nd level slave.</p>
+              <p class="bio">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna.</p>
+              <img class="systemLogo" src="../public/img/logo-dd.png" />
+              <div class="btn-group btn-group-justified darken">
+                <a href="" class="btn btn-default"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                <a href="" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+                <a href="" class="btn btn-default"><i class="fa fa-share-square-o"></i> Share</a>
+                <a href="" class="btn btn-default"><i class="fa fa-plus-square-o"></i> Add to company</a>
+                <a href="" class="btn btn-default"><i class="fa fa-cubes"></i> Play now</a>
+                <a href="" class="btn btn-default"><i class="fa fa-trash-o"></i> Delete</a>
+              </div>
+            </section>
+            <!-- <hr /> -->
+            <section id="basicInfo" class="row">
+              <!-- <div class="col-md-4"><input type="text" name="charName" value="Alin Khori" /><label>Character name</label></div> -->
+              <!--<div class="col-md-4"><input type="text" name="playerName" value="Esteban Díaz" /><label>Player name</label></div>-->
+              <div class="col-md-2"><input type="text" name="charRace" value="Dwarf" /><label>Race</label></div>
+              <div class="col-md-2"><input type="text" name="charClass" value="Slave" /><label>Class</label></div>
+              <div class="col-md-1"><input type="text" name="charLevel" value="2" class="text-center"/><label>Level</label></div>
+              <div class="col-md-1"><input type="text" name="charAge" value="34" /><label>Age</label></div>
+              <div class="col-md-2"><input type="text" name="charAlign" value="Chaotic good" /><label>Alignment</label></div>
+              <div class="col-md-2"><input type="text" name="charDeity" value="None" /><label>Deity</label></div>
+              <div class="col-md-2"><input type="text" name="charSize" value="Small" /><label>Size</label></div>
+              <div class="col-md-2"><input type="text" name="charGender" value="Male" /><label>Gender</label></div>
+              <div class="col-md-2"><input type="text" name="charHeight" value="120 cm" /><label>Height</label></div>
+              <div class="col-md-2"><input type="text" name="charWeight" value="70 kg" /><label>Weight</label></div>
+              <div class="col-md-2"><input type="text" name="charEyes" value="Silver" /><label>Eyes</label></div>
+              <div class="col-md-2"><input type="text" name="charHair" value="Black" /><label>Hair</label></div>
+              <div class="col-md-2"><input type="text" name="charSkin" value="Dark" /><label>Skin</label></div>
+            </section>
+            <div class="row">
+              <section id="abilities" class="col-md-4"> 
+                <dl class="titles">
+                  <dt></dt>
+                  <dd><p>Ability score</p></dd>
+                  <dd><p>Ability modifier</p></dd>
+                  <dd><p>Temporal score</p></dd>
+                  <dd><p>Temporal modifier</p></dd>
+                </dl>
+                <dl>
+                  <dt>STR <span>Strength</span></dt>
+                  <dd><input type="text" name="STRval" value="8" /></dd>
+                  <dd><input type="text" name="STRmod" value="-1" /></dd>
+                  <dd class="tmp"><input type="text" name="STRval-t" value="" /></dd>
+                  <dd class="tmp"><input type="text" name="STRmod-t" value="" /></dd>
+                </dl>
+                <dl>
+                  <dt>DEX <span>Dexterity</span></dt>
+                  <dd><input type="text" name="DEXval" value="15" /></dd>
+                  <dd><input type="text" name="DEXmod" value="+2" /></dd>
+                  <dd class="tmp"><input type="text" name="DEXval-t" value="" /></dd>
+                  <dd class="tmp"><input type="text" name="DEXmod-t" value="" /></dd>
+                </dl>
+                <dl>
+                  <dt>CON <span>Constitution</span></dt>
+                  <dd><input type="text" name="CONval" value="12" /></dd>
+                  <dd><input type="text" name="CONmod" value="+1" /></dd>
+                  <dd class="tmp"><input type="text" name="CONval-t" value="" /></dd>
+                  <dd class="tmp"><input type="text" name="CONmod-t" value="" /></dd>
+                </dl>
+                <dl>
+                  <dt>INT <span>Intelligence</span></dt>
+                  <dd><input type="text" name="INTval" value="10" /></dd>
+                  <dd><input type="text" name="INTmod" value="+0" /></dd>
+                  <dd class="tmp"><input type="text" name="INTval-t" value="" /></dd>
+                  <dd class="tmp"><input type="text" name="INTmod-t" value="" /></dd>
+                </dl>
+                <dl>
+                  <dt>WIS <span>Wisdom</span></dt>
+                  <dd><input type="text" name="WISval" value="10" /></dd>
+                  <dd><input type="text" name="WISmod" value="+0" /></dd>
+                  <dd class="tmp"><input type="text" name="WISval-t" value="" /></dd>
+                  <dd class="tmp"><input type="text" name="WISmod-t" value="" /></dd>
+                </dl>
+                <dl>
+                  <dt>CHA <span>Charisma</span></dt>
+                  <dd><input type="text" name="CHAval" value="10" /></dd>
+                  <dd><input type="text" name="CHAmod" value="+0" /></dd>
+                  <dd class="tmp"><input type="text" name="CHAval-t" value="" /></dd>
+                  <dd class="tmp"><input type="text" name="CHAmod-t" value="" /></dd>
+                </dl>
+              </section>
+              <section id="defense" class="col-md-8">
+                <dl class="titles">
+                  <dt></dt>
+                  <dd class="highlight"><p>TOTAL<p></dd>
+                  <dd class="wider"><p>Current hits</p></p></dd>
+                  <dd class="double"><p>Non-lethal damage</p></dd>
+                  <dd class="wide highlight"><p>Speed</p></dd>
+                </dl>
+                <dl>
+                  <dt>HP <span>Hit points</span></dt>
+                  <dd><input type="text" name="HPtotal" value="14" /></dd>
+                  <dd class="wider"><input type="text" name="HPcurrent" value="" /></dd>
+                  <dd class="double"><input type="text" name="HPnosting" value="0" /></dd>
+                  <dd class="wide"><input type="text" name="HPspeed" value="30" /></dd>
+                </dl>
+                <dl>
+                  <dt>AC <span>Armor Class</span></dt>
+                  <dd><input type="text" name="ACtotal" value="17" /></dd> = <b>10</b> +
+                  <dd><input type="text" name="AC-armor-mod" value="+4" /></dd> +
+                  <dd><input type="text" name="AC-shield-mod;" value="0" /></dd> +
+                  <dd><input type="text" name="AC-DEX-mod" value="+2" /></dd> +
+                  <dd><input type="text" name="AC-size-mod" value="+1" /></dd> +
+                  <dd><input type="text" name="AC-natural" value="0" /></dd> +
+                  <dd><input type="text" name="AC-deflec" value="0" /></dd> +
+                  <dd><input type="text" name="AC-varios" value="0" /></dd>
+                </dl>
+                <dl class="titles top">
+                  <dt></dt>
+                  <dd class="highlight"><p>TOTAL<p></dd> 
+                  <dd class="number"></dd> 
+                  <dd class="symbol"><p>Armor bonus<p></dd> 
+                  <dd class="symbol"><p>Shield bonus<p></dd>
+                  <dd class="symbol"><p>DEX bonus<p></dd>
+                  <dd class="symbol"><p>Size bonus<p></dd>
+                  <dd class="symbol"><p>Natural armor<p></dd>
+                  <dd class="symbol"><p>Deflection bonus<p></dd>
+                  <dd><p>Misc. bonus<p></dd>
+                </dl>
+              </section>
+              <section id="saving" class="col-md-8">
+                <dl class="titles">
+                  <dt></dt>
+                  <dd class="highlight symbol"><p>TOTAL<p></dd>
+                  <dd class="symbol"><p>Base score</p></dd>
+                  <dd class="symbol"><p>Ability modifier</p></dd>
+                  <dd class="symbol"><p>Magic modifier</p></dd>
+                  <dd class="symbol"><p>Misc. modifier</p></dd>
+                  <dd><p>Temporal modifier</p></dd>
+                  <dd class="wide"><p>Conditional modifiers</p></dd>
+                </dl>
+                <dl>
+                  <dt>Fortitude <span>(Constitution)</span></dt>
+                  <dd><input type="text" name="FOR-total" value="18" /></dd> =
+                  <dd><input type="text" name="FOR-base" value="18" /></dd> +
+                  <dd><input type="text" name="FOR-CON-mod;" value="18" /></dd> +
+                  <dd><input type="text" name="FOR-magic-mod" value="18" /></dd> +
+                  <dd><input type="text" name="FOR-misc-mod" value="18" /></dd> +
+                  <dd class="tmp"><input type="text" name="FOR-tmp-mod" value="18" /></dd>
+                </dl>
+                <dl>
+                  <dt>Reflex <span>(Dexterity)</span></dt>
+                  <dd><input type="text" name="REF-total" value="18" /></dd> =
+                  <dd><input type="text" name="REF-base" value="18" /></dd> +
+                  <dd><input type="text" name="REF-DEX-mod;" value="18" /></dd> +
+                  <dd><input type="text" name="REF-magic-mod" value="18" /></dd> +
+                  <dd><input type="text" name="REF-misc-mod" value="18" /></dd> +
+                  <dd class="tmp"><input type="text" name="REF-tmp-mod" value="18" /></dd>
+                </dl>
+                <dl>
+                  <dt>Will <span>(Wisdom)</span></dt>
+                  <dd><input type="text" name="WIL-total" value="18" /></dd> =
+                  <dd><input type="text" name="WIL-base" value="18" /></dd> +
+                  <dd><input type="text" name="WIL-WIS-mod;" value="18" /></dd> +
+                  <dd><input type="text" name="WIL-magic-mod" value="18" /></dd> +
+                  <dd><input type="text" name="WIL-misc-mod" value="18" /></dd> +
+                  <dd class="tmp"><input type="text" name="WIL-tmp-mod" value="18" /></dd>
+                </dl>
+              </section>
+              <div class="col-md-7">
+                <section id="attacks">
+                  <div class="attack row">
+                    <div class="col-sm-5"><label for="attackName01">Attack</label><input type="text" name="attackName01" /></div>
+                    <div class="col-sm-3"><label for="attackBonus01">Total bonus</label><input type="text" name="attackBonus01" /></div>
+                    <div class="col-sm-2"><label for="attackDamage01">Damage</label><input type="text" name="attackDamage01" /></div>
+                    <div class="col-sm-2"><label for="attackCritical01">Critical</label><input type="text" name="attackCritical01" /></div>
+                    <div class="col-sm-3"><label for="attackRange01">Range</label><input type="text" name="attackRange01" /></div>
+                    <div class="col-sm-3"><label for="attackType01">Type</label><input type="text" name="attackType01" /></div>
+                    <div class="col-sm-6"><label for="attackNotes01">Notes</label><input type="text" name="attackNotes01" /></div>
+                  </div>
+                  <div class="attack row">
+                    <div class="col-sm-5"><label for="attackName02">Attack</label><input type="text" name="attackName02" /></div>
+                    <div class="col-sm-3"><label for="attackBonus02">Total bonus</label><input type="text" name="attackBonus02" /></div>
+                    <div class="col-sm-2"><label for="attackDamage02">Damage</label><input type="text" name="attackDamage02" /></div>
+                    <div class="col-sm-2"><label for="attackCritical02">Critical</label><input type="text" name="attackCritical02" /></div>
+                    <div class="col-sm-3"><label for="attackRange02">Range</label><input type="text" name="attackRange02" /></div>
+                    <div class="col-sm-3"><label for="attackType02">Type</label><input type="text" name="attackType02" /></div>
+                    <div class="col-sm-6"><label for="attackNotes02">Notes</label><input type="text" name="attackNotes02" /></div>
+                  </div>
+                  <div class="attack row">
+                    <div class="col-sm-5"><label for="attackName03">Attack</label><input type="text" name="attackName03" /></div>
+                    <div class="col-sm-3"><label for="attackBonus03">Total bonus</label><input type="text" name="attackBonus03" /></div>
+                    <div class="col-sm-2"><label for="attackDamage03">Damage</label><input type="text" name="attackDamage03" /></div>
+                    <div class="col-sm-2"><label for="attackCritical03">Critical</label><input type="text" name="attackCritical03" /></div>
+                    <div class="col-sm-3"><label for="attackRange03">Range</label><input type="text" name="attackRange03" /></div>
+                    <div class="col-sm-3"><label for="attackType03">Type</label><input type="text" name="attackType03" /></div>
+                    <div class="col-sm-6"><label for="attackNotes03">Notes</label><input type="text" name="attackNotes03" /></div>
+                  </div>
+                  <div class="attack row">
+                    <div class="col-sm-5"><label for="attackName04">Attack</label><input type="text" name="attackName04" /></div>
+                    <div class="col-sm-3"><label for="attackBonus04">Total bonus</label><input type="text" name="attackBonus04" /></div>
+                    <div class="col-sm-2"><label for="attackDamage04">Damage</label><input type="text" name="attackDamage04" /></div>
+                    <div class="col-sm-2"><label for="attackCritical04">Critical</label><input type="text" name="attackCritical04" /></div>
+                    <div class="col-sm-3"><label for="attackRange04">Range</label><input type="text" name="attackRange04" /></div>
+                    <div class="col-sm-3"><label for="attackType04">Type</label><input type="text" name="attackType04" /></div>
+                    <div class="col-sm-6"><label for="attackNotes04">Notes</label><input type="text" name="attackNotes04" /></div>
+                  </div>
+                </section>  
+              </div>
+              <section id="skills" class="col-md-5">
+                  
+              </section>  
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../js/lib/bootstrap.min.js"></script>
+  </body>
+</html>

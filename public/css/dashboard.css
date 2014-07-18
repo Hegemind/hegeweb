@@ -174,194 +174,156 @@ body {
   border-radius: 50%;
   margin-left: 2px;
 }
-.charsheet {
+.whiteshade {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.65);
   box-shadow: inset 0 100px 300px rgba(255, 255, 255, 0.65), inset 0 -300px 300px rgba(255, 255, 255, 0.25);
   padding: 20px;
   color: #333;
+}
+/* For fixed width
+
+.charsheet {
   position: relative;
   font-size: 15px;
+  h1, h2, h3, h4, h5, h6 {color: #333;}
+  hr {
+      clear: both;
+      margin: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  #intro {
+    img.avatar {
+      float: left;
+      margin: 0 20px 20px 0;
+      width: 25%;
+      border-radius: 1em 1em 3em / .5em 2em;
+    }
+    h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .sub {
+      font-size: 1.5em;
+      opacity: 0.7;
+    }
+    .systemLogo {
+      width: 200px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  input {
+    background: none;
+    border: 2px solid #333;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+    color: @pen-color;
+    text-align: center;
+  }
+  #basicInfo {
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #333;
+      width: 100%;
+      text-align: left;
+    }
+    label {
+      display: block;
+      font-weight: normal;
+      color: #333;
+      font-size: 0.6em;
+      text-transform: uppercase;
+    }
+  }
+  dl{
+    margin: 0; padding: 0;
+    margin-bottom: 5px;
+    dt {
+      width: 5em;
+      margin: 0; padding: 2px 0;
+      display: inline-block;
+      color: #fff;
+      background: #333;
+      vertical-align: middle;
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        font-size: 0.5em;
+        display: block;
+        font-weight: normal;
+      }
+    }
+    dd {
+      width: 3em;
+      margin: 0; padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+      input {width: 100%;margin: 0; padding: 0;}
+      &.tmp input {border: 1px solid #999; color: gray;}
+    }
+    &.titles {
+      margin-bottom: 0;
+      dt {
+        background: none;
+        color: #333;
+      }
+      dd {
+        text-align: center;
+        text-transform: uppercase;
+        p {font-size: 0.45em; margin-bottom: 0 !important; vertical-align: bottom;}
+        &.highlight p {font-size: 0.8em; font-weight: bold;}
+      }
+      &.top {margin-top: -8px;}
+    }
+    dd.double {width: 6em;}
+  }
+  #abilities {
+  }
+  #defense {
+    dd.wide {width: 10em;}
+    dd.wider {width: 15em;}
+    dd.number {width: 3.4em;}
+    dd.symbol {margin-right: 0.9em;}
+    b {font-size: 1.5em; vertical-align: middle;}
+  }
+  #saving {
+    margin-top: -14px;
+    dt {width: 8em;}
+    dd.wide {width: 8em;}
+    dd.symbol {margin-right: 0.9em;}
+  }
+  #attacks {
+    margin-top: 10px;
+    .attack {
+      border-right: 2px solid #333;
+      margin: 0 0 30px 0;
+      div {
+        padding: 0;
+        &:first-child {
+          margin-top: -10px;
+        } 
+      }
+    }
+    label {
+      background: #333; 
+      color: #fff; 
+      width: 100%; 
+      margin: 0; 
+      text-align: center;
+      text-transform: uppercase;
+      &[for*="attackName"] { border-radius: 10px 10px 0 0; padding: 5px 0}
+    }
+    input {width: 100%; border-top: none; border-right: none;}
+  }
 }
-.charsheet h1,
-.charsheet h2,
-.charsheet h3,
-.charsheet h4,
-.charsheet h5,
-.charsheet h6 {
-  color: #333;
-}
-.charsheet hr {
-  clear: both;
-  margin: 20px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-.charsheet #intro img.avatar {
-  float: left;
-  margin: 0 20px 20px 0;
-  width: 25%;
-  border-radius: 1em 1em 6em 2em;
-}
-.charsheet #intro h1 {
-  font-size: 4em;
-  margin-bottom: 20px;
-}
-.charsheet #intro .sub {
-  font-size: 1.5em;
-  opacity: 0.7;
-}
-.charsheet #intro .systemLogo {
-  width: 200px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-.charsheet section {
-  margin-bottom: 20px;
-}
-.charsheet input {
-  background: none;
-  border: 2px solid #333;
-  font-family: 'Patrick Hand', cursive;
-  font-size: 1.5em;
-  color: #86553e;
-  text-align: center;
-}
-.charsheet #basicInfo input {
-  background: none;
-  border: none;
-  border-bottom: 1px solid #333;
-  width: 100%;
-  text-align: left;
-}
-.charsheet #basicInfo label {
-  display: block;
-  font-weight: normal;
-  color: #333;
-  font-size: 1em;
-}
-.charsheet dl {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 5px;
-}
-.charsheet dl dt {
-  width: 5em;
-  margin: 0;
-  padding: 2px 0;
-  display: inline-block;
-  color: #fff;
-  background: #333;
-  vertical-align: middle;
-  text-align: center;
-  text-transform: uppercase;
-}
-.charsheet dl dt span {
-  font-size: 0.5em;
-  display: block;
-  font-weight: normal;
-}
-.charsheet dl dd {
-  width: 3em;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-.charsheet dl dd input {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.charsheet dl dd.tmp input {
-  border: 1px solid #999;
-  color: gray;
-}
-.charsheet dl.titles {
-  margin-bottom: 0;
-}
-.charsheet dl.titles dt {
-  background: none;
-  color: #333;
-}
-.charsheet dl.titles dd {
-  text-align: center;
-  text-transform: uppercase;
-}
-.charsheet dl.titles dd p {
-  font-size: 0.45em;
-  margin-bottom: 0 !important;
-  vertical-align: bottom;
-}
-.charsheet dl.titles dd.highlight p {
-  font-size: 0.8em;
-  font-weight: bold;
-}
-.charsheet dl.titles.top {
-  margin-top: -8px;
-}
-.charsheet dl dd.double {
-  width: 6em;
-}
-.charsheet #defense dd.wide {
-  width: 10em;
-}
-.charsheet #defense dd.wider {
-  width: 15em;
-}
-.charsheet #defense dd.number {
-  width: 3.4em;
-}
-.charsheet #defense dd.symbol {
-  margin-right: 0.9em;
-}
-.charsheet #defense b {
-  font-size: 1.5em;
-  vertical-align: middle;
-}
-.charsheet #saving {
-  margin-top: -14px;
-}
-.charsheet #saving dt {
-  width: 8em;
-}
-.charsheet #saving dd.wide {
-  width: 8em;
-}
-.charsheet #saving dd.symbol {
-  margin-right: 0.9em;
-}
-.charsheet #attacks {
-  margin-top: 10px;
-}
-.charsheet #attacks .attack {
-  border-right: 2px solid #333;
-  margin: 0 0 30px 0;
-}
-.charsheet #attacks .attack div {
-  padding: 0;
-}
-.charsheet #attacks .attack div:first-child {
-  margin-top: -10px;
-}
-.charsheet #attacks label {
-  background: #333;
-  color: #fff;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-.charsheet #attacks label[for*="attackName"] {
-  border-radius: 10px 10px 0 0;
-  padding: 5px 0;
-}
-.charsheet #attacks input {
-  width: 100%;
-  border-top: none;
-  border-right: none;
-}
+*/
 /*
  * Placeholder dashboard ideas
  */

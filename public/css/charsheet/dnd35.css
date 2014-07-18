@@ -1,0 +1,261 @@
+.charsheet {
+  position: relative;
+  font-size: 15px;
+}
+.charsheet h1,
+.charsheet h2,
+.charsheet h3,
+.charsheet h4,
+.charsheet h5,
+.charsheet h6 {
+  color: #333;
+}
+.charsheet hr {
+  clear: both;
+  margin: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.charsheet #intro img.avatar {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 25%;
+  border-radius: 1em 1em 6em 2em;
+}
+.charsheet #intro h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+.charsheet #intro .sub {
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+.charsheet #intro .systemLogo {
+  width: 200px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.charsheet section {
+  margin-bottom: 20px;
+}
+.charsheet .row {
+  margin-left: -5px !important;
+  margin-right: -5px !important;
+}
+.charsheet .row [class*="col-"] {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.charsheet input {
+  background: none;
+  border: 2px solid #333;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.5em;
+  color: #86553e;
+  text-align: center;
+}
+.charsheet #basicInfo input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+.charsheet #basicInfo label {
+  display: block;
+  font-weight: normal;
+  color: #333;
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+.charsheet dl {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.charsheet dl dt {
+  margin: 0;
+  padding: 2px 0;
+  display: inline-block;
+  color: #fff;
+  background: #333;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+}
+.charsheet dl dt span {
+  font-size: 0.5em;
+  display: block;
+  font-weight: normal;
+}
+.charsheet dl dd {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.charsheet dl dd input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.charsheet dl dd.tmp input {
+  border: 1px solid #999;
+  color: gray;
+}
+.charsheet dl dd.plus {
+  margin-right: 5px;
+}
+.charsheet dl dd.plus:after {
+  content: "+";
+  position: absolute;
+  top: 5px;
+  padding-left: 3px;
+}
+.charsheet dl dd.equal {
+  margin-right: 5px;
+}
+.charsheet dl dd.equal:after {
+  content: "=";
+  position: absolute;
+  top: 5px;
+  padding-left: 3px;
+}
+.charsheet dl.titles {
+  margin-bottom: 0;
+}
+.charsheet dl.titles dt {
+  background: none;
+  color: #333;
+}
+.charsheet dl.titles dd {
+  text-align: center;
+  text-transform: uppercase;
+}
+.charsheet dl.titles dd p {
+  font-size: 0.45em;
+  margin-bottom: 0 !important;
+  vertical-align: bottom;
+}
+.charsheet dl.titles dd.highlight p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.charsheet dl.titles dd.plus:after {
+  content: none;
+}
+.charsheet dl.titles.top {
+  margin-top: -8px;
+}
+.charsheet #defense b {
+  font-size: 1.5em;
+  vertical-align: middle;
+  padding: 0 2px;
+}
+.charsheet #saving {
+  margin-top: -12px;
+  margin-bottom: 25px;
+}
+.charsheet #saving textarea {
+  width: 100%;
+  background: none;
+  border: 2px solid #333;
+  position: absolute;
+  left: 10px;
+  height: 118px;
+  resize: none;
+}
+.charsheet #attackInfo {
+  margin-bottom: 40px;
+}
+.charsheet #attackInfo dt {
+  padding: 8px 0;
+  vertical-align: middle;
+}
+.charsheet #attacks {
+  margin-top: 10px;
+}
+.charsheet #attacks .attack {
+  border-right: 2px solid #333;
+  margin: 0 0 30px 0;
+}
+.charsheet #attacks .attack div {
+  padding: 0 !important;
+}
+.charsheet #attacks .attack div:first-child {
+  margin-top: -10px;
+}
+.charsheet #attacks label {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.charsheet #attacks label[for*="attackName"] {
+  border-radius: 10px 10px 0 0;
+  padding: 5px 0;
+}
+.charsheet #attacks input {
+  width: 100%;
+  border-top: none;
+  border-right: none;
+}
+.charsheet #skills table th {
+  font-size: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  border: 2px solid #333;
+  padding: 3px;
+}
+.charsheet #skills table th:first-child {
+  font-size: 0.8em;
+  text-align: left;
+  font-weight: bold;
+}
+.charsheet #skills table th.head {
+  font-size: 1em;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+.charsheet #skills table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.charsheet #skills table td input {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1em;
+}
+.charsheet #skills table td:first-child {
+  text-align: left;
+  font-size: 0.8em;
+}
+.charsheet #skills table td:first-child input {
+  width: auto;
+  margin: 0 5px;
+}
+.charsheet #skills table td:nth-child(2) input {
+  border: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 0.5em;
+}
+.charsheet #skills table td:nth-child(3) input {
+  border: 1px solid #333;
+  height: 90%;
+  margin-top: 5%;
+  padding: 0;
+}
+.charsheet #skills table td:nth-child(3) input:after {
+  content: "=";
+  position: absolute;
+  top: 5px;
+  padding-left: 3px;
+}
