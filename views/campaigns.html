@@ -10,13 +10,8 @@
 
     <title>Dashboard Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="../public/css/core-styles.css" rel="stylesheet">
-    <link href="../public/css/dashboard.css" rel="stylesheet">
     <link href="../public/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
 
  </head>
 
@@ -35,10 +30,20 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Survey</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">ediaz <i class="fa fa-caret-down"></i> <img src="../public/img/avatars/ed.jpg" class="profile"/></a>
+              <ul class="dropdown-menu profile" role="menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-sliders"></i> Preferences</a></li>
+                <li><a href="#"><i class="fa fa-support"></i> Support</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-check-circle-o"></i> Upgrade account</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log out</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -70,8 +75,7 @@
               <li><b>Next session:</b> July 20th, 2014 at 12:00 am</li>
             </ul> 
             <ul class="company"> 
-              <li>By <img src="../public/img/avatar.jpg" />
-                <i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /></li>
+              <li><img src="../public/img/avatars/dice.jpg" /><i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatars/ed.jpg" /><img src="../public/img/avatars/leandro.jpg" /><img src="../public/img/avatars/caritas.jpg" /></li>
             </ul>
           </div>
 
@@ -80,7 +84,7 @@
                 <a href="charsheet.html">
                 <div style="background-image: url(../public/img/backgrounds/dnd/fantasydragon.jpg);">
                     <header>
-                      <h2>Alin</h2>
+                      <h2>Understanding Angular</h2>
                       <p>Male dwarf slave.</p>
                     </header>
                     <ul class="sessions">
@@ -89,7 +93,7 @@
                       <li><b>Next session:</b> July 20th, 2014 at 12:00 am</li>
                     </ul> 
                     <ul class="company"> 
-                      <li>By <img src="../public/img/avatar.jpg" /><i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /></li>
+                      <li><img src="../public/img/avatars/dice.jpg" /><i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatars/ed.jpg" /><img src="../public/img/avatars/leandro.jpg" /><img src="../public/img/avatars/caritas.jpg" /></li>
                     </ul>
                 </div>
                 </a>
@@ -98,7 +102,7 @@
                 <a href="charsheet.html">
                 <div style="background-image: url(../public/img/backgrounds/dnd/reddragon.jpg);">
                     <header>
-                      <h2>Alin</h2>
+                      <h2>The Several Features of NodeJS</h2>
                       <p>Male dwarf slave.</p>
                     </header>
                     <ul class="sessions">
@@ -107,7 +111,7 @@
                       <li><b>Next session:</b> July 20th, 2014 at 12:00 am</li>
                     </ul> 
                     <ul class="company"> 
-                      <li>By <img src="../public/img/avatar.jpg" /><i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /></li>
+                      <li><img src="../public/img/avatars/dice.jpg" /><i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatars/ed.jpg" /><img src="../public/img/avatars/leandro.jpg" /><img src="../public/img/avatars/caritas.jpg" /></li>
                     </ul>
                 </div>
                 </a>
@@ -116,7 +120,7 @@
                 <a href="charsheet.html">
                 <div style="background-image: url(../public/img/backgrounds/dnd/whitedragon.jpg);">
                     <header>
-                      <h2>Alin</h2>
+                      <h2>Protecting the Power of Bootstrap</h2>
                       <p>Male dwarf slave.</p>
                     </header>
                     <ul class="sessions">
@@ -125,7 +129,7 @@
                       <li><b>Next session:</b> July 20th, 2014 at 12:00 am</li>
                     </ul> 
                     <ul class="company"> 
-                      <li>By <img src="../public/img/avatar.jpg" /><i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /><img src="../public/img/avatar.jpg" /></li>
+                      <li><img src="../public/img/avatars/dice.jpg" /><i class="fa fa-ellipsis-v"></i> <img src="../public/img/avatars/ed.jpg" /><img src="../public/img/avatars/leandro.jpg" /><img src="../public/img/avatars/caritas.jpg" /></li>
                     </ul>
                 </div>
                 </a>
@@ -142,10 +146,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../js/lib/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $('.campaign.featured div div').height( $('.campaign.featured img').height() );
-    </script>
+    <script src="../public/js/lib/jquery.min.js"></script>
+    <script src="../public/js/lib/bootstrap.min.js"></script>
   </body>
 </html>

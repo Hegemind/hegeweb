@@ -10,17 +10,12 @@
 
     <title>Dashboard Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="../public/css/core-styles.css" rel="stylesheet">
-    <link href="../public/css/dashboard.css" rel="stylesheet">
     <link href="../public/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
 
  </head>
 
-  <body>
+  <body class="reference">
 
     <div class="navbar navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -35,10 +30,20 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Survey</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">ediaz <i class="fa fa-caret-down"></i> <img src="../public/img/avatars/ed.jpg" class="profile"/></a>
+              <ul class="dropdown-menu profile" role="menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-sliders"></i> Preferences</a></li>
+                <li><a href="#"><i class="fa fa-support"></i> Support</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-check-circle-o"></i> Upgrade account</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log out</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -67,7 +72,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../js/lib/bootstrap.min.js"></script>
+    <script src="../public/js/lib/jquery.min.js"></script>
+    <script src="../public/js/lib/bootstrap.min.js"></script>
   </body>
 </html>

@@ -10,13 +10,8 @@
 
     <title>Dashboard Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="../public/css/core-styles.css" rel="stylesheet">
-    <link href="../public/css/dashboard.css" rel="stylesheet">
     <link href="../public/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
 
  </head>
 
@@ -35,10 +30,20 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Survey</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">ediaz <i class="fa fa-caret-down"></i> <img src="../public/img/avatars/ed.jpg" class="profile"/></a>
+              <ul class="dropdown-menu profile" role="menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-sliders"></i> Preferences</a></li>
+                <li><a href="#"><i class="fa fa-support"></i> Support</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-check-circle-o"></i> Upgrade account</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log out</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -61,8 +66,10 @@
             <div class="col-sm-4 col-md-3 col-lg-2">
                 <a href="charsheet.html">
                 <div>
-                    <h2>Alin</h2>
-                    <p>Male dwarf slave.</p>
+                    <header>
+                        <h2>Alin</h2>
+                        <p>Male dwarf slave.</p>
+                    </header>
                     <img src="../public/img/avatars/alin.jpg" />
                     <ul>
                         <li>STR<b>8</b></li>
@@ -72,13 +79,16 @@
                         <li>WIS<b>10</b></li>
                         <li>CHA<b>10</b></li>
                     </ul>
-                </a>
                 </div>
+                </a>
             </div>
             <div class="col-sm-4 col-md-3 col-lg-2">
+                <a href="charsheet.html">
                 <div>
-                    <h2>Nelaser</h2>
-                    <p>Female elf ranger.</p>
+                    <header>
+                        <h2>Nelaser</h2>
+                        <p>Female elf ranger.</p>
+                    </header>
                     <img src="../public/img/avatars/nelaser.jpg" />
                     <ul>
                         <li>STR <b>13</b></li>
@@ -89,11 +99,15 @@
                         <li>CHA <b>15</b></li>
                     </ul>
                 </div>
+                </a>
             </div>
             <div class="col-sm-4 col-md-3 col-lg-2">
+                <a href="charsheet.html">
                 <div>
-                    <h2>Narder</h2>
-                    <p>Male human cleric.</p>
+                    <header>
+                        <h2>Narder</h2>
+                        <p>Male human cleric.</p>
+                    </header>
                     <img src="../public/img/avatars/narder.jpg" />
                     <ul>
                         <li>STR <b>16</b></li>
@@ -104,6 +118,7 @@
                         <li>CHA <b>7</b></li>
                     </ul>
                 </div>
+                </a>
             </div>
             <div class="col-sm-4 col-md-3 col-lg-2 create">
                 <a href=""><i class="fa fa-plus-circle"></i></a>
@@ -116,7 +131,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../js/lib/bootstrap.min.js"></script>
+    <script src="../public/js/lib/jquery.min.js"></script>
+    <script src="../public/js/lib/bootstrap.min.js"></script>
   </body>
 </html>
