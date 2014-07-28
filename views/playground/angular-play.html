@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Angular Playground</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <script src="../../public/js/lib/angular.min.js"></script> 
+    <script src="../../public/js/DD-charsheet.js"></script> 
+    <SCRIPT TYPE="text/javascript">
+        /*function dropAlignment($scope) {
+         $scope.alignment = [  "Legal Good",
+              "Legal Neutral",
+              "Legal Evil",
+              "Neutral Good",
+              "True Neutral",
+              "Neutral Evil",
+              "Chaotic Good",
+              "Chaotic Neutral",
+              "Chaotic Evil"
+            ];
+         }*/
+    </SCRIPT> 
+</HEAD>
+<body>
+
+ <select id="alignment" ng-controller="dropAlignment">
+    <option ng-repeat="align in alignment">{{ align }}</option>
+ </select>
+
+  </body>
+</html>

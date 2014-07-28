@@ -1,0 +1,214 @@
+@pen-color:       #86553e;
+
+.charsheet {
+  position: relative;
+  font-size: 15px;
+  h1, h2, h3, h4, h5, h6 {color: #333;}
+  hr {
+      clear: both;
+      margin: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+  // Header
+  #intro {
+    img.avatar {
+      float: left;
+      margin: -20px 20px 20px 0;
+      width: 30%;
+      border-radius: 1em 1em 3em / .5em 2em;
+    }
+    h1 {
+      font-size: 4em;
+      margin: 20px 0;
+    }
+    .sub {
+      font-size: 1.5em;
+      opacity: 0.7;
+    }
+    // .systemLogo {
+    //   width: 200px;
+    //   position: absolute;
+    //   top: 10px;
+    //   right: 20px;
+    // }
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  .row {
+    margin-left: -5px !important; margin-right: -5px !important;
+    [class*="col-"] {
+      padding-left: 5px !important; padding-right: 5px !important;
+    }
+  }
+  input {
+    background: none;
+    border: 2px solid #333;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+    color: @pen-color;
+    text-align: center;
+  }
+  #basicInfo {
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #333;
+      width: 100%;
+      text-align: left;
+      padding: 0;
+    }
+    label {
+      display: block;
+      font-weight: normal;
+      color: #333;
+      font-size: 0.6em;
+      text-transform: uppercase;
+    }
+  }
+
+  dl{
+    margin: 0; padding: 0;
+    margin-bottom: 5px;
+    dt {
+      margin: 0; padding: 2px 0;
+      display: inline-block;
+      color: #fff;
+      background: #333;
+      vertical-align: middle;
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        font-size: 0.5em;
+        display: block;
+        font-weight: normal;
+      }
+    }
+    dd {
+      margin: 0; padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      input {width: 100%;margin: 0; padding: 0;}
+      &.tmp input {border: 1px solid #999; color: gray;}
+      &.plus {
+        margin-right: 5px;
+        &:after {content: "+"; position: absolute;top: 5px;padding-left: 3px;}
+      }
+      &.equal {
+        margin-right: 5px;
+        &:after {content: "="; position: absolute;top: 5px;padding-left: 3px;}
+      }
+    }
+    &.titles {
+      margin-bottom: 0;
+      dt {
+        background: none;
+        color: #333;
+      }
+      dd {
+        text-align: center;
+        text-transform: uppercase;
+        p {font-size: 0.45em; margin-bottom: 0 !important; vertical-align: bottom;}
+        &.highlight p {font-size: 0.8em; font-weight: bold;}
+        &.plus:after {content: none;}
+      }
+      &.top {margin-top: -8px;}
+    }
+  }
+  
+  #abilities {
+  }
+  #defense {
+    b {font-size: 1.5em; vertical-align: middle; padding: 0 2px;}
+  }
+  #saving {
+    margin-top: -12px;
+    margin-bottom: 25px;
+    textarea {
+      width: 100%;
+      background: none;
+      border: 2px solid #333;
+      position: absolute;
+      left: 10px;
+      height: 118px;
+      resize: none; 
+    }
+  }
+  #attackInfo {
+    margin-bottom: 40px;
+    dt {padding: 8px 0; vertical-align: middle;}
+  }
+  #attacks {
+    margin-top: 10px;
+    .attack {
+      border-right: 2px solid #333;
+      margin: 0 0 30px 0;
+      div {
+        padding: 0 !important;
+        &:first-child {
+          margin-top: -10px;
+        } 
+      }
+    }
+    label {
+      background: #333; 
+      color: #fff; 
+      width: 100%; 
+      margin: 0; 
+      text-align: center;
+      text-transform: uppercase;
+      &[for*="attackName"] { border-radius: 10px 10px 0 0; padding: 5px 0}
+    }
+    input {
+      width: 100%; 
+      border-top: none; 
+      border-right: none;
+    }
+  }
+  #skills {
+    table {
+      th {
+        font-size: 0.4em;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: normal;
+        border: 2px solid #333;
+        padding: 3px;
+        &:first-child {
+          font-size: 0.8em; 
+          text-align: left; 
+          font-weight: bold;
+        }
+        &.head {
+          font-size: 1em; 
+          background: #333;
+          color: #fff;
+          text-align: center;
+        }
+      }
+      td {
+        text-align: center;
+        vertical-align: middle;
+        input {
+          width: 70%;
+          border: none;
+          border-bottom: 1px solid #333;
+          font-size: 1em;
+        }
+        &:first-child {
+          text-align: left;
+          font-size: 0.8em;
+          input {width: auto; margin: 0 5px;}
+        }
+        &:nth-child(2) input {
+          border: none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #333;font-size: 0.5em;}
+        &:nth-child(3) input {
+          border: 1px solid #333; height: 90%;margin-top: 5%; padding: 0; 
+          &:after {content: "="; position: absolute;top: 5px;padding-left: 3px;}
+        }
+      }
+    }
+  }
+}

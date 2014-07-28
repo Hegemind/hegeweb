@@ -1,16 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Patrick+Hand&subset=latin,latin-ext);
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
 }
 .clear {
   clear: both;
 }
 section {
-  margin: 15px;
+  margin: 10px;
 }
 #charsheet {
-  width: 1100px;
+  width: 1024px;
   margin: 25px auto;
+}
+@media (max-width: 768px) {
+  #charsheet {
+    width: 768px;
+  }
 }
 h2 {
   background: #000;
@@ -51,8 +58,16 @@ h3.total {
   font-size: 0.7em;
   font-weight: 500;
 }
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  display: none;
+  webkit-appearance: none;
+  margin: 0;
+}
 input,
-textarea {
+textarea,
+span.input {
+  font-family: 'Patrick Hand', cursive;
   border: 1px solid #000;
   display: inline-block;
   margin: 0;
@@ -60,36 +75,56 @@ textarea {
   font-weight: 300;
   text-align: center;
   width: 2rem;
-  font-family: 'Patrick Hand', cursive;
-  padding: 4px;
+  padding: 0 4px 4px;
   margin: 3px;
-  height: 1rem;
+  height: 1.2em;
   line-height: 1em;
   vertical-align: middle;
   outline: none;
+  webkit-appearance: none;
 }
 input.wide,
-textarea.wide {
-  width: 6.5rem;
+textarea.wide,
+span.input.wide {
+  width: 4.2rem;
 }
 input.box,
-textarea.box {
+textarea.box,
+span.input.box {
   background: #fff;
 }
 input.box.shade,
-textarea.box.shade {
+textarea.box.shade,
+span.input.box.shade {
   border: solid #ddd;
   border-width: 6px 8px;
   margin: 0 -5px 0 0;
 }
 input.line,
-textarea.line {
+textarea.line,
+span.input.line {
   border-width: 0 0 1px 0;
   background: transparent;
 }
 input[readonly],
-textarea[readonly] {
+textarea[readonly],
+span.input[readonly] {
   border-color: #ddd;
+}
+@media (max-width: 768px) {
+  input,
+  textarea,
+  span.input {
+    width: 2rem;
+  }
+  input.wide,
+  textarea.wide,
+  span.input.wide {
+    width: 4.2rem;
+  }
+}
+span.input.box {
+  padding: 4px 4px 0;
 }
 /*******************************
 	Logo
@@ -100,6 +135,15 @@ textarea[readonly] {
 }
 #logo img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+  #logo img {
+    max-width: 300px;
+  }
 }
 /*******************************
 	Character Info
@@ -115,6 +159,7 @@ textarea[readonly] {
   display: block;
   overflow: hidden;
   text-align: left;
+  text-transform: capitalize;
 }
 #charInfo label {
   display: block;
@@ -127,16 +172,39 @@ textarea[readonly] {
   margin-right: 1rem;
 }
 #charInfo div.longest {
-  width: 19rem;
+  width: 18rem;
 }
 #charInfo div.long {
-  width: 13.8rem;
+  width: 13rem;
 }
 #charInfo div.wide {
-  width: 5.5rem;
+  width: 5.2rem;
 }
 #charInfo div.short {
-  width: 3.8rem;
+  width: 3.55rem;
+}
+#charInfo select {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  #charInfo {
+    width: 100%;
+  }
+  #charInfo div.longest {
+    width: 22.5rem;
+  }
+  #charInfo div.long {
+    width: 16.5rem;
+  }
+  #charInfo div.wide {
+    width: 6.7rem;
+  }
+  #charInfo div.short {
+    width: 4.7rem;
+  }
 }
 /*******************************
 	Abilities
@@ -151,10 +219,19 @@ textarea[readonly] {
   width: 4rem;
   padding: 0 2px;
 }
+@media (max-width: 768px) {
+  #abilities {
+    width: 100%;
+  }
+  #abilities div[id] {
+    display: inline-block;
+  }
+}
 /*******************************
 	Hit Points
 ********************************/
 #hitPoints {
+  margin-bottom: 15px;
   float: left;
 }
 #hitPoints #HP {
@@ -163,9 +240,15 @@ textarea[readonly] {
 #hitPoints h2 {
   width: 4rem;
 }
+#hitPoints h3 {
+  padding: 0 7px;
+}
 #hitPoints h3.h2 {
   width: 4rem;
   padding: 0 2px;
+}
+#hitPoints h3.longer {
+  padding: 0;
 }
 #hitPoints #AC + .title h3 {
   vertical-align: text-top;
@@ -174,16 +257,18 @@ textarea[readonly] {
   padding-left: 1.4rem;
 }
 #hitPoints #AC + .title h3.total ~ .box:last-child {
-  padding-left: 0.9rem;
+  padding-left: 0.6rem;
+  padding-right: 0;
 }
 #hitPoints #AC + .title h3.total + .box {
-  padding-left: 3.5rem;
+  padding-left: 3rem;
 }
 #hitPoints .longest {
   width: 18rem;
 }
 #hitPoints .longer {
-  width: 11rem;
+  width: 10rem;
+  padding-right: 0;
 }
 #hitPoints:after {
   clear: both;
@@ -193,9 +278,10 @@ textarea[readonly] {
 ********************************/
 #fight {
   float: left;
+  margin-bottom: 15px;
 }
 #fight > div:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 #fight > div:first-child .box:first-of-type {
   margin-right: 11px;
@@ -204,13 +290,13 @@ textarea[readonly] {
   width: 4rem;
 }
 #fight h2.wide {
-  width: 8rem;
+  width: 7rem;
 }
 #fight .title h3.h2 {
-  width: 7.2rem;
+  width: 6.5rem;
 }
 #fight .title h3.box {
-  margin-left: 0.95rem;
+  margin-left: 0.75rem;
 }
 /*******************************
 	Skills
@@ -225,33 +311,41 @@ textarea[readonly] {
   display: block;
 }
 #skills div.title h3 {
-  width: 1.75rem;
+  width: 1.3rem;
 }
 #skills div.title h3.label {
   font-weight: 500;
-  width: 8rem;
-  padding: 0 1.2rem 0 1.5rem;
+  width: 5rem;
+  padding: 0 1.4rem 0 1.5rem;
   text-align: left;
 }
+#skills div.title h3:nth-child(3) {
+  padding-right: 0.15rem;
+}
 #skills div.title h3:nth-child(n+4) {
-  padding-right: 1.25rem;
+  padding-right: 1.1rem;
 }
 #skills div.title h3:last-child {
   padding-right: 0;
 }
+@media (max-width: 768px) {
+  #skills div.title h3 span {
+    display: none;
+  }
+}
 #skills div.skill label {
   font-size: 0.8em;
   display: inline-block;
-  width: 11rem;
+  width: 8rem;
   font-variant: small-caps;
 }
 #skills div.skill label input {
-  margin-right: 10px;
+  margin-right: 5px;
   width: auto;
 }
 #skills div.skill input {
   width: 1.25rem;
-  padding: 0 4px;
+  padding: 0 0px;
   font-size: 0.9em;
 }
 #skills div.skill .key {
@@ -282,16 +376,19 @@ textarea[readonly] {
   z-index: 10;
 }
 #saving .title .h2 {
-  width: 7rem;
+  width: 6rem;
   font-size: 0.7em;
   font-weight: 500;
   padding: 0 2px;
 }
 #saving .title .box {
-  padding-right: 1.4rem;
+  padding-right: 1.25rem;
+}
+#saving .title .box.shade {
+  width: 2.2rem;
 }
 #saving .title .notes {
-  width: 7rem;
+  width: 6.5rem;
   font-size: 0.5em;
   font-weight: 500;
 }
@@ -299,7 +396,7 @@ textarea[readonly] {
   display: inline-block;
 }
 #saving .rows h2 {
-  width: 7rem;
+  width: 6rem;
 }
 #saving .rows h3.h2 {
   width: 8rem;
@@ -309,12 +406,36 @@ textarea[readonly] {
   display: inline-block;
 }
 #saving #notes textarea {
-  width: 7rem;
+  width: 6.5rem;
   height: 6.5rem;
   margin: -15px 0 0 10px;
   vertical-align: -15px;
   padding-top: 1em;
   resize: none;
+}
+@media (max-width: 768px) {
+  #saving .box {
+    width: 1.3rem;
+  }
+  #saving .title .box {
+    padding-right: 1.18rem;
+  }
+  #saving h3.box.shade {
+    padding-right: 0;
+  }
+  #saving .notes {
+    display: none;
+  }
+  #saving #notes {
+    display: block;
+  }
+  #saving #notes textarea {
+    margin: 10px 0 0 0;
+    vertical-align: 0;
+    width: 100%;
+    height: 3rem;
+    padding-top: 0;
+  }
 }
 /*******************************
 	Attack Info
@@ -361,6 +482,34 @@ textarea[readonly] {
 #attackInfo input.wide {
   width: 3rem;
 }
+@media (max-width: 768px) {
+  #attackInfo input.box {
+    width: 1.8rem;
+  }
+  #attackInfo input.box.wide {
+    width: 3.4rem;
+  }
+  #attackInfo h3.box {
+    padding-right: 1.1rem;
+  }
+  #attackInfo h3.box:last-child {
+    padding-right: 0;
+  }
+  #attackInfo h3.box.wide {
+    width: 3.5rem;
+    padding-right: 1rem;
+  }
+  #attackInfo h2 {
+    width: 5rem;
+  }
+  #attackInfo h2.wide {
+    width: 8.5rem;
+    margin-left: 0;
+  }
+  #attackInfo h2.long {
+    width: 9.75rem;
+  }
+}
 /*******************************
 	Attack List
 ********************************/
@@ -369,7 +518,12 @@ textarea[readonly] {
   float: left;
 }
 #attackList .attack {
-  width: 40rem;
+  width: 38rem;
+}
+@media (max-width: 768px) {
+  #attackList .attack {
+    width: 25.75rem;
+  }
 }
 #attackList .attack div {
   float: left;
@@ -381,15 +535,26 @@ textarea[readonly] {
   width: 6rem;
 }
 #attackList .attack div.wide {
-  width: 14rem;
+  width: 13rem;
 }
 #attackList .attack div.long {
-  width: 28rem;
+  width: 26rem;
 }
 #attackList .attack div:first-child label {
   font-size: 1em;
   margin-top: -7px;
   border-radius: 8px 8px 0 0;
+}
+@media (max-width: 768px) {
+  #attackList .attack div.box {
+    width: 4rem;
+  }
+  #attackList .attack div.wide {
+    width: 8.85rem;
+  }
+  #attackList .attack div.long {
+    width: 17.7rem;
+  }
 }
 #attackList .attack label {
   display: block;
@@ -409,11 +574,22 @@ textarea[readonly] {
   overflow: hidden;
   padding: 8px 0;
 }
+@media (max-width: 768px) {
+  #attackList .attack input {
+    padding: 4px 0;
+  }
+}
 #attackList .attack .ammo {
   padding-top: 5px;
   margin-bottom: 35px;
   font-size: 0.7em;
   text-transform: uppercase;
+}
+#attackList .attack .ammo .xl {
+  display: inline;
+}
+#attackList .attack .ammo .xs {
+  display: none;
 }
 #attackList .attack .ammo span {
   font-weight: 500;
@@ -426,4 +602,16 @@ textarea[readonly] {
   padding: 0 5px;
   margin: 0 10px;
   width: 10rem;
+}
+@media (max-width: 768px) {
+  #attackList .attack .ammo .xl {
+    display: none;
+  }
+  #attackList .attack .ammo .xs {
+    display: none;
+  }
+  #attackList .attack .ammo input.line {
+    width: 5rem;
+    margin: 0 5px 0 0;
+  }
 }
