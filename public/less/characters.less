@@ -1,6 +1,31 @@
 
 .characters {
+	h1 {display: block;}
+	.filter-btn {
+		position: absolute;
+		text-align: right;
+		bottom: 30px;
+		color: #fff !important; 
+		cursor: pointer;
+	}
+	.filtering {
+		margin-bottom: 30px;
+		display: none;
+		.btn-group {
+			background: rgba(255, 255, 255, 0.5);
+			border-radius: 5px;
+			a { 
+				color: #fff; 
+				border-color: rgba(255, 255, 255, 0.75);
+				border-left-width: 0;
+				&:first-child { border-left-width: 1px;}
+			}
+		}
+	}
 	.row.cards {
+		.mix {
+			display: none;
+		}
 	  	div div {
 	  		ul {
 		      	list-style: none;

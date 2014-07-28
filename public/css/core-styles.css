@@ -2820,9 +2820,20 @@ tbody.collapse.in {
 .btn-group.darken .btn-default:first-child {
   border-left-width: 1px;
 }
-.btn-group.darken .btn-default:hover {
+.btn-group.darken .btn-default:hover,
+.btn-group.darken .btn-default.active {
   background: rgba(255, 255, 255, 0.25);
   text-shadow: 0 0 5px #000;
+}
+.topmenu {
+  position: relative;
+  left: -10.5px;
+  top: -10.5px;
+  width: auto;
+}
+.topmenu a {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 [data-toggle="buttons"] > .btn > input[type="radio"],
 [data-toggle="buttons"] > .btn > input[type="checkbox"] {
@@ -5613,11 +5624,18 @@ button.close {
   }
 }
 /* Move down content because we have a fixed navbar that is 50px tall */
+html {
+  height: 100%;
+}
 body {
   padding-top: 50px;
   background: url(../img/home/back-green.jpg) no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
+  height: 100%;
+}
+.row {
+  position: relative;
 }
 .sub-header {
   padding-bottom: 10px;
@@ -5704,11 +5722,13 @@ body {
 .main .page-header {
   margin-top: 0;
 }
-.row.cards div a {
+.row.cards div > a,
+.row.cards section > a {
   text-decoration: none;
   color: inherit;
 }
-.row.cards div a div {
+.row.cards div > a > div,
+.row.cards section > a > div {
   width: 100%;
   vertical-align: middle;
   display: inline-block;
@@ -5719,21 +5739,25 @@ body {
   padding: 5px;
   margin-bottom: 30px;
 }
-.row.cards div a div:hover {
+.row.cards div > a > div:hover,
+.row.cards section > a > div:hover {
   cursor: pointer;
-  box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.65), 0 0 25px #000000;
+  box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.65), 0 0 25px rgba(0, 0, 0, 0.65);
 }
-.row.cards div a div header h2 {
+.row.cards div > a > div header h2,
+.row.cards section > a > div header h2 {
   margin: 0;
   font-size: 1.5em;
   font-weight: 500;
 }
-.row.cards div a div header p {
+.row.cards div > a > div header p,
+.row.cards section > a > div header p {
   font-size: 0.9em;
   margin-bottom: 5px;
   opacity: 0.75;
 }
-.row.cards div a div img {
+.row.cards div > a > div img,
+.row.cards section > a > div img {
   display: block;
   width: 100%;
   margin: 0 auto 5px;
@@ -5775,6 +5799,94 @@ body {
   border-color: #fff;
   background: rgba(65, 115, 87, 0.2);
 }
+.blackshade {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0 100px 300px rgba(0, 0, 0, 0.65), inset 0 -300px 300px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  color: #fff;
+}
+time.calendar {
+  width: 100px;
+  background: #fff;
+  border: 1px solid silver;
+  border-top: 10px solid #B22222;
+  border-radius: 3px 3px 5px 5px;
+  padding: 5px 10px;
+  margin-right: 15px;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  float: left;
+}
+time.calendar:first-line {
+  border-bottom: 1px solid silver;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 2em;
+  font-weight: normal;
+}
+time.calendar:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.loader {
+  display: block;
+  margin: 20vh auto 0;
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.loader span {
+  position: absolute;
+  background: #000;
+  opacity: 0.1;
+  width: 15vw;
+  height: 15vw;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.loader span:nth-child(1) {
+  -webkit-animation: growDot 1s alternate 0s infinite;
+}
+.loader span:nth-child(2) {
+  -webkit-animation: growDot 1s alternate 0.2s infinite;
+}
+.loader span:nth-child(3) {
+  -webkit-animation: growDot 1s alternate 0.4s infinite;
+}
+@-webkit-keyframes growDot {
+  0% {
+    -webkit-transform: scale(0);
+    z-index: 5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    z-index: 2;
+  }
+}
+#legal {
+  position: absolute;
+  bottom: 15px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.8em;
+  opacity: 0.25;
+}
+#legal a {
+  color: #fff;
+  text-decoration: underline;
+}
+.home #legal {
+  left: 20px;
+  bottom: 15px;
+}
 /*
  * Main content
  */
@@ -5789,6 +5901,85 @@ body {
 }
 .navbar a {
   color: #fff;
+}
+.home {
+  background: url(../img/home/back-home.jpg) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+.home .container-fluid {
+  position: relative;
+  height: 100%;
+}
+.home h1 {
+  margin: 0 0 -25px 0;
+  font-size: 8em;
+  font-family: Sansation;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+.home .subtitle {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0.75;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+.home .homeblock {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+}
+.home .cards header {
+  text-align: center;
+  color: #000;
+  margin: 10px 0;
+}
+.home .cards header h2 {
+  font-family: Sansation;
+  font-size: 2em;
+}
+.home .cards header h2:first-line {
+  font-size: 0.6em;
+}
+.home .cards section a div:hover {
+  box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.65);
+  border-color: #fff;
+}
+.home .cards img {
+  width: 50% !important;
+}
+.characters h1 {
+  display: block;
+}
+.characters .filter-btn {
+  position: absolute;
+  text-align: right;
+  bottom: 30px;
+  color: #fff !important;
+  cursor: pointer;
+}
+.characters .filtering {
+  margin-bottom: 30px;
+  display: none;
+}
+.characters .filtering .btn-group {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.characters .filtering .btn-group a {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.75);
+  border-left-width: 0;
+}
+.characters .filtering .btn-group a:first-child {
+  border-left-width: 1px;
+}
+.characters .row.cards .mix {
+  display: none;
 }
 .characters .row.cards div div ul {
   list-style: none;
@@ -5818,39 +6009,79 @@ body {
   top: 35px;
   right: 20px;
 }
-.campaigns .featured {
-  margin-bottom: 30px;
+.campaigns .row.cards div a div {
   position: relative;
   background-size: cover;
   background-position: center;
+  padding: 10px;
 }
-.campaigns .featured header {
+.campaigns .row.cards div a div header {
+  margin-bottom: 100px;
+}
+.campaigns .row.cards div a div header h2 {
+  font-size: 2em;
+  font-family: Sansation;
+}
+.campaigns .row.cards div a div header p {
+  font-style: italic;
+  font-size: 0.9em;
+  opacity: 0.75;
+}
+.campaigns .row.cards div a div ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 50px 10px 10px;
+  font-size: 0.8em;
+  width: auto;
+  margin: 0 -10px;
+  padding: 10px;
+}
+.campaigns .row.cards div a div ul.sessions {
+  background: rgba(255, 255, 255, 0.6);
+}
+.campaigns .row.cards div a div ul.company {
+  background: rgba(255, 255, 255, 0.4);
+  text-align: right;
+  margin-bottom: -10px;
+  border-radius: 0 0 3px 3px;
+}
+.campaigns .row.cards div a div ul.company i {
+  opacity: 0.5;
+  vertical-align: middle;
+}
+.campaigns .row.cards div a div ul.company img {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-left: 5px;
+}
+.campaigns .row.cards div a div ul.company img:first-child {
+  margin-right: 5px;
+}
+.campaigns .row.cards div:first-child a div header {
   margin-bottom: 150px;
   background: none;
 }
-.campaigns .featured header h2 {
+.campaigns .row.cards div:first-child a div header h2 {
   margin-top: 0;
   font-family: Sansation;
   font-size: 3em;
   text-shadow: 0 0 25px #fff;
 }
-.campaigns .featured header p {
+.campaigns .row.cards div:first-child a div header p {
   font-style: italic;
   font-size: 0.9em;
   opacity: 0.75;
 }
-.campaigns .featured ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px 50px 10px 10px;
+.campaigns .row.cards div:first-child a div ul {
   position: absolute;
-  font-size: 0.8em;
-  background: rgba(255, 255, 255, 0.5);
+  background: none;
 }
-.campaigns .featured ul.sessions {
-  padding: 10px 50px 10px 10px;
+.campaigns .row.cards div:first-child a div ul.sessions {
+  padding: 10px 100px 10px 10px;
   bottom: 0;
-  left: 0px;
+  left: 10px;
   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 75%, rgba(255, 255, 255, 0) 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.65)), color-stop(75%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
@@ -5864,10 +6095,10 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 75%, rgba(255, 255, 255, 0) 100%);
   /* W3C */
 }
-.campaigns .featured ul.company {
-  padding: 10px 10px 10px 50px;
-  bottom: 0;
-  right: 0;
+.campaigns .row.cards div:first-child a div ul.company {
+  padding: 10px 10px 10px 100px;
+  bottom: 10px;
+  right: 10px;
   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 25%, rgba(255, 255, 255, 0.65) 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.65)), color-stop(25%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0.65)));
@@ -5881,66 +6112,148 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 25%, rgba(255, 255, 255, 0.65) 100%);
   /* W3C */
 }
-.campaigns .featured ul.company i {
+.campaigns .row.cards div:first-child a div ul.company i {
   opacity: 0.5;
   vertical-align: middle;
 }
-.campaigns .featured ul.company img {
+.campaigns .row.cards div:first-child a div ul.company img {
   width: 40px;
   border-radius: 50%;
   border: 1px solid #fff;
   margin-left: 5px;
 }
-.campaigns .featured ul.company img:first-child {
+.campaigns .row.cards div:first-child a div ul.company img:first-child {
   margin-right: 5px;
 }
-.campaigns .row.cards div div {
-  position: relative;
-  background-size: cover;
-  background-position: center;
+.sessions .cards div a > div {
   padding: 10px;
 }
-.campaigns .row.cards div div header {
-  margin-bottom: 100px;
-}
-.campaigns .row.cards div div header h2 {
+.sessions .cards div a > div header h2 {
   font-size: 2em;
   font-family: Sansation;
+  padding-right: 200px;
 }
-.campaigns .row.cards div div header p {
-  font-style: italic;
-  font-size: 0.9em;
-  opacity: 0.75;
+.sessions .cards div a > div header:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-.campaigns .row.cards div div ul {
-  list-style: none;
+.sessions .cards div a > div ul.confirm {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  width: 180px;
+}
+.sessions .cards div a > div ul.confirm li {
+  display: block;
+  text-align: center;
+  padding: 0;
   margin: 0;
-  padding: 10px 50px 10px 10px;
+  height: 29.5%;
+  padding: 5% 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.sessions .cards div a > div ul.confirm li i {
+  display: block;
+  font-size: 1.5em;
+}
+.sessions .cards div a > div ul.confirm li.accept {
+  border-top-right-radius: 4px;
+  background: rgba(0, 128, 0, 0.5);
+  color: #fff;
+  box-shadow: inset 0 0 25px rgba(0, 128, 0, 0.65);
+  border-bottom: none;
+}
+.sessions .cards div a > div ul.confirm li.accept:hover {
+  background: rgba(0, 128, 0, 0.7);
+}
+.sessions .cards div a > div ul.confirm li.decline {
+  background: rgba(220, 20, 60, 0.5);
+  box-shadow: inset 0 0 25px rgba(220, 20, 60, 0.65);
+  color: #fff;
+}
+.sessions .cards div a > div ul.confirm li.decline:hover {
+  background: rgba(220, 20, 60, 0.7);
+}
+.sessions .cards div a > div ul.confirm li.propose {
+  border-bottom-right-radius: 4px;
+  box-shadow: inset 0 0 25px rgba(152, 152, 152, 0.65);
+  background: rgba(152, 152, 152, 0.5);
+  border-top: none;
+}
+.sessions .cards div a > div ul.confirm li.propose:hover {
+  background: rgba(125, 125, 125, 0.7);
+}
+.sessions .cards div a > div ul.company {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
   font-size: 0.8em;
+}
+.sessions .cards div a > div ul.company li {
+  display: inline-block;
   width: auto;
-  margin: 0 -10px;
-  padding: 10px;
+  position: relative;
+  vertical-align: middle;
 }
-.campaigns .row.cards div div ul.sessions {
-  background: rgba(255, 255, 255, 0.6);
+.sessions .cards div a > div ul.company li:after {
+  font-family: 'FontAwesome';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2em;
+  padding: 0;
+  background: #fff;
+  border-radius: 50%;
+  line-height: 0.80em;
 }
-.campaigns .row.cards div div ul.company {
-  background: rgba(255, 255, 255, 0.4);
-  text-align: right;
-  margin-bottom: -10px;
-  border-radius: 0 0 3px 3px;
+.sessions .cards div a > div ul.company li.accepted:after {
+  content: '\f058';
+  color: #008000;
 }
-.campaigns .row.cards div div ul.company i {
+.sessions .cards div a > div ul.company li.declined:after {
+  content: '\f057';
+  color: #8B0000;
+}
+.sessions .cards div a > div ul.company li.pending:after {
+  content: '\f059';
+  color: gray;
+}
+.sessions .cards div a > div ul.company i {
   opacity: 0.5;
   vertical-align: middle;
 }
-.campaigns .row.cards div div ul.company img {
+.sessions .cards div a > div ul.company img {
   width: 40px;
   border-radius: 50%;
   border: 1px solid #fff;
-  display: inline-block;
   margin-left: 5px;
 }
-.campaigns .row.cards div div ul.company img:first-child {
+.sessions .cards div a > div ul.company img:first-child {
   margin-right: 5px;
+}
+.reference #search {
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 15px 50px rgba(255, 255, 255, 0.65);
+  background: url(../img/menu-icons/search.png) no-repeat center right 10px rgba(255, 255, 255, 0.55);
+  background-size: 25px;
+}
+.reference #search:hover,
+.reference #search:focus,
+.reference #search:active {
+  box-shadow: inset 0 15px 50px rgba(255, 255, 255, 0.65), 0 0 25px rgba(0, 0, 0, 0.65);
+}
+.reference .row.cards h2 {
+  font-family: Sansation;
+}
+.reference .row.cards img {
+  width: 75%;
+  margin-top: 10px;
+  opacity: 0.75;
 }

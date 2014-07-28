@@ -1,0 +1,23 @@
+.home {
+  height: 100%;
+}
+.home .container-fluid {
+  position: relative;
+  height: 100%;
+}
+.home .container-fluid .illustrate {
+  height: 400px;
+}
+.home .container-fluid .presentate {
+  position: absolute;
+  bottom: 0;
+  height: 400px;
+}
+.home header {
+  text-align: center;
+}
+.home header h2 {
+  font-family: Sansation;
+  color: #000;
+  text-align: center;
+}

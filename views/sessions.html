@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../public/img/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Hegemon</title>
 
     <link href="../public/css/core-styles.css" rel="stylesheet">
     <link href="../public/css/font-awesome.min.css" rel="stylesheet">
@@ -26,22 +26,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Hegemon</a>
+          <a class="navbar-brand" href="index.html">Hegemon</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Survey</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="info/overview.html">Overview</a></li>
+            <li><a href="info/survey.html">Survey</a></li>
+            <li><a href="info/feedback.html">Feedback</a></li>
+            <li><a href="info/playground.html">Playground</a></li>
             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">ediaz <i class="fa fa-caret-down"></i> <img src="../public/img/avatars/ed.jpg" class="profile"/></a>
               <ul class="dropdown-menu profile" role="menu">
-                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                <li><a href="#"><i class="fa fa-sliders"></i> Preferences</a></li>
-                <li><a href="#"><i class="fa fa-support"></i> Support</a></li>
+                <li><a href="profile/profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="profile/preferences.html"><i class="fa fa-sliders"></i> Preferences</a></li>
+                <li><a href="profile/support.html"><i class="fa fa-support"></i> Support</a></li>
                 <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-check-circle-o"></i> Upgrade account</a></li>
+                <li><a href="profile/upgrade.html"><i class="fa fa-check-circle-o"></i> Upgrade account</a></li>
                 <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-power-off"></i> Log out</a></li>
+                <li><a href="index.html"><i class="fa fa-power-off"></i> Log out</a></li>
               </ul>
             </li>
           </ul>
@@ -51,7 +52,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-sm-2 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="characters.html"><img src="../public/img/menu-icons/characters.png" />Characters</a></li>
             <li><a href="companies.html"><img src="../public/img/menu-icons/companies.png" />Companies</a></li>
@@ -59,12 +60,35 @@
             <li class="active"><a href="sessions.html"><img src="../public/img/menu-icons/session.png" />Sessions</a></li>
             <li><a href="reference.html"><img src="../public/img/menu-icons/reference.png" />Reference</a></li>
           </ul>
+          <div id="legal"><small>© 2014 Hegemon<br /><a href="info/legal.html">Terms and conditions</a></small></div>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Sessions</h1>
-          <p>Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
-          <p>Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          <div class="row cards">
+            <div class="col-xs-12 XXcol-lg-6">
+                <a href="charsheet.html">
+                  <div>
+                    <header>
+                        <time class="calendar" datetime="">20 Jul<br/><i class="fa fa-clock-o"></i> 20:00 h</time>
+                      <h2>The Coding of the Platform</h2>
+                      <p>Next session will be at ED's home next Saturday.</p>
+                    </header>
+                    <ul class="company col-sm-6"> 
+                      <li class="accepted"><img src="../public/img/avatars/dice.jpg"/></li>
+                      <li><i class="fa fa-ellipsis-v"></i></li>
+                      <li class="pending"><img src="../public/img/avatars/ed.jpg"/></li>
+                      <li class="accepted"><img src="../public/img/avatars/leandro.jpg"/></li>
+                      <li class="declined"><img src="../public/img/avatars/caritas.jpg"/></li>
+                    </ul>
+                    <ul class="confirm Xcol-sm-6">
+                      <li class="accept"><i class="fa fa-check-circle"></i> Accept</li>
+                      <li class="decline"><i class="fa fa-times-circle"></i> Decline</li>
+                      <li class="propose"><i class="fa fa-refresh"></i> Propose change</li>
+                    </ul>
+                  </div>
+                </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

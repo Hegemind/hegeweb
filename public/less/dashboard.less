@@ -5,12 +5,20 @@
 // Adapt layout to dashboard setting
 
 /* Move down content because we have a fixed navbar that is 50px tall */
+html {
+  height: 100%;
+}
 body {
   padding-top: 50px;
   background: url(../img/home/back-green.jpg) no-repeat center top; 
   background-size: cover;
   background-attachment: fixed;
+  height: 100%;
 }
+
+ .row {
+  position: relative;
+ }
 
 .sub-header {
   padding-bottom: 10px;
@@ -100,11 +108,11 @@ body {
 
 // Specify general styles, like cards, whiteshade, etc...
 .row.cards {
-  div {
-    a {
+  div, section {
+    &>a {
       text-decoration: none;
       color: inherit;
-      div {
+      &>div {
         width: 100%;
         vertical-align: middle;
         display: inline-block;
@@ -116,7 +124,7 @@ body {
         margin-bottom: 30px;
         &:hover {
           cursor: pointer;
-          box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.65), 0 0 25px #000;
+          box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.65), 0 0 25px rgba(0, 0, 0, 0.65);
         }
         header {
           h2 {
@@ -173,6 +181,86 @@ body {
   }
 }
 
+.blackshade {
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.45);
+  box-shadow: inset 0 100px 300px rgba(0,0,0, 0.65), inset 0 -300px 300px rgba(0,0,0, 0.25);
+  padding: 20px;
+  color: #fff;
+}
+
+time.calendar {
+  width: 100px;
+  background: #fff;
+  border: 1px solid silver;
+  border-top: 10px solid #B22222;
+  border-radius: 3px 3px 5px 5px;
+  padding: 5px 10px;
+  margin-right: 15px;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  float: left;
+  &:first-line {
+    border-bottom: 1px solid silver;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 2em;
+    font-weight: normal;
+  }
+  &:after {
+    content:'';
+    display:block;
+    clear: both;
+  }
+}
+
+.loader {
+  display: block;
+  margin: 20vh auto 0;
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  background: rgba(0, 0, 0, .1);
+  position: relative;
+  overflow: hidden;
+  
+  span {
+    position: absolute;
+    background: #000;
+    opacity: 0.1;
+    width: 15vw;
+    height: 15vw;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    
+    &:nth-child(1) { -webkit-animation: growDot 1s alternate 0s infinite; }
+    &:nth-child(2) { -webkit-animation: growDot 1s alternate 0.2s infinite; }
+    &:nth-child(3) { -webkit-animation: growDot 1s alternate 0.4s infinite; }
+  }
+}
+
+@-webkit-keyframes growDot {
+  0% { -webkit-transform: scale(0); z-index: 5; }
+  100% { -webkit-transform: scale(1); z-index: 2; }
+}
+
+#legal {
+  position: absolute;
+  bottom: 15px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.8em;
+  opacity: 0.25;
+  a {color: #fff; text-decoration: underline;}
+}
+
+.home #legal {
+  left: 20px;
+  bottom: 15px;
+}
 // Set variables for layout alternatives, including it's styles
 
 // Include responsive media queries

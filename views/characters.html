@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../public/img/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Hegemon</title>
 
     <link href="../public/css/core-styles.css" rel="stylesheet">
     <link href="../public/css/font-awesome.min.css" rel="stylesheet">
@@ -26,22 +26,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Hegemon</a>
+          <a class="navbar-brand" href="index.html">Hegemon</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Survey</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="info/overview.html">Overview</a></li>
+            <li><a href="info/survey.html">Survey</a></li>
+            <li><a href="info/feedback.html">Feedback</a></li>
+            <li><a href="info/playground.html">Playground</a></li>
             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">ediaz <i class="fa fa-caret-down"></i> <img src="../public/img/avatars/ed.jpg" class="profile"/></a>
               <ul class="dropdown-menu profile" role="menu">
-                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                <li><a href="#"><i class="fa fa-sliders"></i> Preferences</a></li>
-                <li><a href="#"><i class="fa fa-support"></i> Support</a></li>
+                <li><a href="profile/profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="profile/preferences.html"><i class="fa fa-sliders"></i> Preferences</a></li>
+                <li><a href="profile/support.html"><i class="fa fa-support"></i> Support</a></li>
                 <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-check-circle-o"></i> Upgrade account</a></li>
+                <li><a href="profile/upgrade.html"><i class="fa fa-check-circle-o"></i> Upgrade account</a></li>
                 <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-power-off"></i> Log out</a></li>
+                <li><a href="index.html"><i class="fa fa-power-off"></i> Log out</a></li>
               </ul>
             </li>
           </ul>
@@ -59,79 +60,127 @@
             <li><a href="sessions.html"><img src="../public/img/menu-icons/session.png" />Sessions</a></li>
             <li><a href="reference.html"><img src="../public/img/menu-icons/reference.png" />Reference</a></li>
           </ul>
+          <div id="legal"><small>© 2014 Hegemon<br /><a href="info/legal.html">Terms and conditions</a></small></div>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Characters</h1>
-          <div class="row cards">
-            <div class="col-sm-4 col-md-3 col-lg-2">
-                <a href="charsheet.html">
-                <div>
-                    <header>
-                        <h2>Alin</h2>
-                        <p>Male dwarf slave.</p>
-                    </header>
-                    <img src="../public/img/avatars/alin.jpg" />
-                    <ul>
-                        <li>STR<b>8</b></li>
-                        <li>DEX<b>10</b></li>
-                        <li>CON<b>12</b></li>
-                        <li>INT<b>10</b></li>
-                        <li>WIS<b>10</b></li>
-                        <li>CHA<b>10</b></li>
-                    </ul>
+        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">
+            <div class="row">
+                <h1 class="page-header col-xs-12 col-sm-9">Characters</h1>
+                <a class="filter-btn col-xs-12 col-sm-3">Show filters <i class="fa fa-filter"></i></a>
+            </div>
+            <div class="row filtering">
+                <div class="col-sm-4">
+                    <div class="btn-group btn-group-justified">
+                        <a class="btn filter" data-filter=".dnd" href="#">DnD</a>
+                        <a class="btn filter" data-filter=".vampire" href="#">Vampire</a>
+                    </div>
                 </div>
-                </a>
-            </div>
-            <div class="col-sm-4 col-md-3 col-lg-2">
-                <a href="charsheet.html">
-                <div>
-                    <header>
-                        <h2>Nelaser</h2>
-                        <p>Female elf ranger.</p>
-                    </header>
-                    <img src="../public/img/avatars/nelaser.jpg" />
-                    <ul>
-                        <li>STR <b>13</b></li>
-                        <li>DEX <b>13</b></li>
-                        <li>CON <b>15</b></li>
-                        <li>INT <b>13</b></li>
-                        <li>WIS <b>14</b></li>
-                        <li>CHA <b>15</b></li>
-                    </ul>
+                <div class="col-sm-8">
+                    <div class="btn-group btn-group-justified">
+                        <a class="btn sort" data-sort="random" href="#">Random</a>
+                        <a class="btn sort" data-sort="played:desc" href="#">Most played</a>
+                        <a class="btn sort" data-sort="level:desc" href="#">Higher level</a>
+                    </div>
                 </div>
-                </a>
             </div>
-            <div class="col-sm-4 col-md-3 col-lg-2">
-                <a href="charsheet.html">
-                <div>
-                    <header>
-                        <h2>Narder</h2>
-                        <p>Male human cleric.</p>
-                    </header>
-                    <img src="../public/img/avatars/narder.jpg" />
-                    <ul>
-                        <li>STR <b>16</b></li>
-                        <li>DEX <b>10</b></li>
-                        <li>CON <b>7</b></li>
-                        <li>INT <b>10</b></li>
-                        <li>WIS <b>14</b></li>
-                        <li>CHA <b>7</b></li>
-                    </ul>
+            <div id="js-mixitup" class="row cards">
+                <div class="mix dnd col-sm-4 col-md-3 col-lg-2" data-played="10" data-level="2">
+                    <a href="charsheet.html">
+                    <div>
+                        <header>
+                            <h2>Alin</h2>
+                            <p>Male dwarf slave.</p>
+                        </header>
+                        <img src="../public/img/avatars/alin.jpg" />
+                        <ul>
+                            <li>STR<b>8</b></li>
+                            <li>DEX<b>10</b></li>
+                            <li>CON<b>12</b></li>
+                            <li>INT<b>10</b></li>
+                            <li>WIS<b>10</b></li>
+                            <li>CHA<b>10</b></li>
+                        </ul>
+                    </div>
+                    </a>
                 </div>
-                </a>
-            </div>
-            <div class="col-sm-4 col-md-3 col-lg-2 create">
-                <a href=""><i class="fa fa-plus-circle"></i></a>
-            </div>
+                <div class="mix dnd col-sm-4 col-md-3 col-lg-2" data-played="19" data-level="1">
+                    <a href="charsheet.html">
+                    <div>
+                        <header>
+                            <h2>Nelaser</h2>
+                            <p>Female elf ranger.</p>
+                        </header>
+                        <img src="../public/img/avatars/nelaser.jpg" />
+                        <ul>
+                            <li>STR <b>13</b></li>
+                            <li>DEX <b>13</b></li>
+                            <li>CON <b>15</b></li>
+                            <li>INT <b>13</b></li>
+                            <li>WIS <b>14</b></li>
+                            <li>CHA <b>15</b></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+                <div class="mix dnd col-sm-4 col-md-3 col-lg-2" data-played="9" data-level="2">
+                    <a href="charsheet.html">
+                    <div>
+                        <header>
+                            <h2>Narder</h2>
+                            <p>Male human cleric.</p>
+                        </header>
+                        <img src="../public/img/avatars/narder.jpg" />
+                        <ul>
+                            <li>STR <b>16</b></li>
+                            <li>DEX <b>10</b></li>
+                            <li>CON <b>7</b></li>
+                            <li>INT <b>10</b></li>
+                            <li>WIS <b>14</b></li>
+                            <li>CHA <b>7</b></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+                <div class="mix vampire col-sm-4 col-md-3 col-lg-2" data-played="15" data-level="3">
+                    <a href="charsheet.html">
+                    <div>
+                        <header>
+                            <h2>Narder</h2>
+                            <p>Male tremere 11th.</p>
+                        </header>
+                        <img src="../public/img/avatars/narder.jpg" />
+                        <ul>
+                            <li>STR <b>16</b></li>
+                            <li>DEX <b>10</b></li>
+                            <li>CON <b>7</b></li>
+                            <li>INT <b>10</b></li>
+                            <li>WIS <b>14</b></li>
+                            <li>CHA <b>7</b></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 create">
+                    <a href=""><i class="fa fa-plus-circle"></i></a>
+                </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../public/js/lib/jquery.min.js"></script>
     <script src="../public/js/lib/bootstrap.min.js"></script>
+    <script src="../public/js/lib/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#js-mixitup').mixItUp();
+        });
+    </script>
+
+    <script type="text/javascript">
+            $('.filter-btn').click( $('.filtering').slideToggle() );
+            console.log('filtros!')
+    </script>
   </body>
 </html>

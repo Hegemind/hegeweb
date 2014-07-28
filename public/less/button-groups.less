@@ -234,9 +234,25 @@
     border-left-width: 0;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
     &:first-child {border-left-width: 1px}
-    &:hover {background: rgba(255,255,255,0.25); text-shadow: 0 0 5px #000;}
+    &:hover, &.active {background: rgba(255,255,255,0.25); text-shadow: 0 0 5px #000;}
   }
 }
+
+// Clear, fixed menu for top options
+// -------------------------------------
+
+.topmenu {
+  position: relative;
+  left: -10.5px;
+  top: -10.5px;
+  width: auto;
+  a {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+
 
 
 // Checkbox and radio options

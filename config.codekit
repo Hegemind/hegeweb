@@ -40,15 +40,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/public\/css\/dashboard.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/css\/dashboard.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/public\/css\/DD_charsheet.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -67,6 +58,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/css\/home.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/home.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/css\/theme.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -76,17 +76,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/public\/img\/avatar.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20859,
-		"inputAbbreviatedPath": "\/public\/img\/avatar.jpg",
-		"outputAbbreviatedPath": "\/public\/img\/avatar.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/img\/avatars\/alin.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -94,6 +83,50 @@
 		"initialSize": 23092,
 		"inputAbbreviatedPath": "\/public\/img\/avatars\/alin.jpg",
 		"outputAbbreviatedPath": "\/public\/img\/avatars\/alin.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/avatars\/caritas.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1670,
+		"inputAbbreviatedPath": "\/public\/img\/avatars\/caritas.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/avatars\/caritas.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/avatars\/dice.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49209,
+		"inputAbbreviatedPath": "\/public\/img\/avatars\/dice.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/avatars\/dice.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/avatars\/ed.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 167304,
+		"inputAbbreviatedPath": "\/public\/img\/avatars\/ed.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/avatars\/ed.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/avatars\/leandro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20859,
+		"inputAbbreviatedPath": "\/public\/img\/avatars\/leandro.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/avatars\/leandro.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -138,6 +171,17 @@
 		"initialSize": 718544,
 		"inputAbbreviatedPath": "\/public\/img\/backgrounds\/dnd\/fantasydragon.jpg",
 		"outputAbbreviatedPath": "\/public\/img\/backgrounds\/dnd\/fantasydragon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/backgrounds\/dnd\/freezedragon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 351346,
+		"inputAbbreviatedPath": "\/public\/img\/backgrounds\/dnd\/freezedragon.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/backgrounds\/dnd\/freezedragon.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -219,17 +263,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/home\/add_user-128.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2551,
-		"inputAbbreviatedPath": "\/public\/img\/home\/add_user-128.png",
-		"outputAbbreviatedPath": "\/public\/img\/home\/add_user-128.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/img\/home\/back-green.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -241,13 +274,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/img\/home\/design-128.png": {
-		"fileType": 32768,
+	"\/public\/img\/home\/back-home.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1572,
-		"inputAbbreviatedPath": "\/public\/img\/home\/design-128.png",
-		"outputAbbreviatedPath": "\/public\/img\/home\/design-128.png",
+		"initialSize": 210544,
+		"inputAbbreviatedPath": "\/public\/img\/home\/back-home.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/home\/back-home.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -274,6 +307,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/img\/menu-icons\/armory-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5251,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/armory-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/armory-b.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/img\/menu-icons\/armory.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -281,6 +325,17 @@
 		"initialSize": 2727,
 		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/armory.png",
 		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/armory.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/menu-icons\/bestiary-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7201,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/bestiary-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/bestiary-b.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -303,6 +358,17 @@
 		"initialSize": 2491,
 		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/bonfire.png",
 		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/bonfire.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/menu-icons\/campaign-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4027,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/campaign-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/campaign-b.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -340,6 +406,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/img\/menu-icons\/classes-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4688,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/classes-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/classes-b.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/img\/menu-icons\/companies.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -358,6 +435,28 @@
 		"initialSize": 2800,
 		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/deities.png",
 		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/deities.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/menu-icons\/design-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3058,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/design-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/design-b.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/menu-icons\/dropbox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6065,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/dropbox.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/dropbox.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -384,6 +483,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/img\/menu-icons\/gdrive.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7033,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/gdrive.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/gdrive.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/menu-icons\/magic-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5347,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/magic-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/magic-b.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/img\/menu-icons\/magic.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -391,6 +512,17 @@
 		"initialSize": 2713,
 		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/magic.png",
 		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/magic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/menu-icons\/onedrive.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5415,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/onedrive.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/onedrive.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -406,6 +538,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/img\/menu-icons\/powers-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6585,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/powers-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/powers-b.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/img\/menu-icons\/powers.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -417,6 +560,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/img\/menu-icons\/races-b.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4958,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/races-b.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/races-b.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/img\/menu-icons\/reference.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -424,6 +578,17 @@
 		"initialSize": 1764,
 		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/reference.png",
 		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/reference.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/menu-icons\/search.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3682,
+		"inputAbbreviatedPath": "\/public\/img\/menu-icons\/search.png",
+		"outputAbbreviatedPath": "\/public\/img\/menu-icons\/search.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -489,6 +654,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/js\/lib\/bootstrap.min.js",
 		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/bootstrap.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/public\/js\/lib\/jquery.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/lib\/jquery.min.js",
+		"outputAbbreviatedPath": "\/public\/js\/lib\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -594,16 +770,16 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/public\/less\/campaign.less": {
+	"\/public\/less\/campaigns.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/less\/campaign.less",
-		"outputAbbreviatedPath": "\/public\/css\/campaign.css",
+		"inputAbbreviatedPath": "\/public\/less\/campaigns.less",
+		"outputAbbreviatedPath": "\/public\/css\/campaigns.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -624,6 +800,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/less\/carousel.less",
 		"outputAbbreviatedPath": "\/public\/css\/carousel.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/public\/less\/characters.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/less\/characters.less",
+		"outputAbbreviatedPath": "\/public\/css\/characters.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -844,6 +1040,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/less\/grid.less",
 		"outputAbbreviatedPath": "\/public\/css\/grid.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/public\/less\/home.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/less\/home.less",
+		"outputAbbreviatedPath": "\/public\/css\/home.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2115,15 +2331,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/views\/charsheet-fixed.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/views\/charsheet-fixed.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/views\/charsheet.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2151,20 +2358,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/views\/dashboard.html": {
+	"\/views\/components\/navbar.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/views\/dashboard.html",
+		"inputAbbreviatedPath": "\/views\/components\/navbar.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/views\/dnd.html": {
+	"\/views\/components\/sidebar.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/views\/dnd.html",
+		"inputAbbreviatedPath": "\/views\/components\/sidebar.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2183,6 +2390,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/views\/playground\/angular-play.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/playground\/dnd.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/playground\/dnd.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
